@@ -1,0 +1,55 @@
+{
+  "gnom": [
+    "agree.mp3",
+    "crying.mp3",
+    "dark-laugh.mp3",
+    "hawk.mp3",
+    "hello.mp3",
+    "oioioi.mp3",
+    "thinking.mp3",
+    "thunder-laugh.mp3"
+  ],
+  "woodshopper": [
+    "axt.mp3",
+    "bored.mp3",
+    "chainsaw.mp3",
+    "cheering.mp3",
+    "foreign-pain.mp3",
+    "sigh.mp3",
+    "timber.mp3"
+  ],
+  "goblin": [
+    "amazed.mp3",
+    "goodby.mp3",
+    "hello.mp3",
+    "laugh-evil.mp3",
+    "laugh-evil2.mp3",
+    "laugh-long.mp3",
+    "okay.mp3",
+    "pleased.mp3",
+    "wrong.mp3"
+  ],
+  "groschums": [
+    "attack.mp3",
+    "brawler.mp3",
+    "crying.mp3",
+    "scepsis.mp3",
+    "shock-attack.mp3",
+    "ouh.mp3",
+    "sigh.mp3",
+    "thinking.mp3",
+    "timber.mp3",
+    "wow.mp3"
+  ],
+  "tree-ghost": [
+    "call.mp3",
+    "call2.mp3",
+    "call3.mp3",
+    "cheering.mp3",
+    "king-call.mp3",
+    "tree-ghost.mp3",
+    "puls.mp3"
+  ],
+  "beat-bird": ["hello.mp3", "flight.mp3"],
+  "mellots": ["attack.mp3", "growl.mp3", "pleased.mp3"]
+}

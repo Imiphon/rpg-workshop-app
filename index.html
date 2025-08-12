@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melopoiia – RPG Workshop MVP</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <button id="burger" aria-label="Kapitelmenü">☰</button>
+    <h1 class="app-title">Melopoiia</h1>
+    <div class="mixers">
+      <label>Amb/Playback
+        <input id="vol-amb" type="range" min="0" max="1" step="0.01" value="0.9">
+      </label>
+      <label>Effects
+        <input id="vol-fx" type="range" min="0" max="1" step="0.01" value="1">
+      </label>
+    </div>
+  </header>
+
+  <aside id="menu" class="side-menu hidden" aria-hidden="true">
+    <h2>Kapitel</h2>
+    <ul id="chapter-list"></ul>
+    <hr>
+    <label class="precache">
+      <input id="precache-all" type="checkbox">
+      Alle Audios vorladen (groß!)
+    </label>
+  </aside>
+
+  <main class="layout">
+    <!-- Row 1 -->
+    <section class="row">
+      <div class="tile" id="tile-ambient">
+        <h3>Ambient</h3>
+        <div class="btn-list" id="ambient-buttons"></div>
+      </div>
+      <div class="tile" id="tile-spells">
+        <h3>Zauber</h3>
+        <div class="btn-list" id="spell-buttons"></div>
+      </div>
+      <div class="tile" id="tile-metronome">
+        <h3>Metronom</h3>
+        <div class="placeholder">— kommt später —</div>
+      </div>
+      <div class="tile" id="tile-claps">
+        <h3>Claps</h3>
+        <div class="btn-list" id="clap-buttons"></div>
+      </div>
+    </section>
+
+    <!-- Row 2 -->
+    <section class="row">
+      <div class="tile" id="tile-playback">
+        <h3>Playback</h3>
+        <div class="btn-list" id="playback-buttons"></div>
+      </div>
+      <div class="tile" id="tile-npc1">
+        <h3 id="npc1-title">NPC 1</h3>
+        <div class="btn-list scroll" id="npc1-buttons"></div>
+      </div>
+      <div class="tile" id="tile-npc2">
+        <h3 id="npc2-title">NPC 2</h3>
+        <div class="btn-list scroll" id="npc2-buttons"></div>
+      </div>
+      <div class="tile" id="tile-npc3">
+        <h3 id="npc3-title">NPC 3</h3>
+        <div class="btn-list scroll swipeable" id="npc3-buttons"></div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story">
+      <div class="story-header">
+        <button id="back-btn">◀ Zurück</button>
+        <h2 id="chapter-title">Kapitel</h2>
+      </div>
+      <article id="chapter-content"></article>
+      <nav id="chapter-links" class="chapter-links"></nav>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-card">
+      <h2>Audio aktivieren</h2>
+      <p>Tippe „Start“, um die Klänge zu aktivieren.</p>
+      <button id="overlay-start">Start</button>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
