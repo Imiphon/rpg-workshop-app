@@ -8,8 +8,14 @@ export async function renderTilesForChapter(ch) {
   // Ambient buttons (chapter ambient + common set)
   const ambList = [
     ch.ambient,
-    "amb-forest","amb-river","amb-glade","amb-field",
-    "amb-gnom-city","amb-groschums","amb-squirrel","amb-mellots-wisper",
+    "amb-forest",
+    "amb-river",
+    "amb-glade",
+    "amb-field",
+    "amb-gnom-city",
+    "amb-groschums",
+    "amb-squirrel",
+    "amb-mellots-wisper",
   ].filter((v, i, self) => v && self.indexOf(v) === i);
 
   els.ambientButtons.innerHTML = "";
@@ -18,10 +24,18 @@ export async function renderTilesForChapter(ch) {
     btn.className = "btn";
     btn.textContent = key.replace(/^amb-/, "").replace(/-/g, " ");
     btn.dataset.key = key;
+
     btn.addEventListener("click", () => {
-      const path = key.startsWith("/") ? key : STATE.ambientBase + key + ".mp3";
-     path.playAmbient(path, key);
-     STATE.lastAmbientKey = key;
+      const src = key.startsWith("/") ? key : STATE.ambientBase + key + ".mp3";
+
+      // don't reload if same ambient is already active
+      if (STATE.lastAmbientKey === key) {
+        updateActiveAmbient(key);
+        return;
+      }
+
+      engine.playAmbient(src, key);
+      STATE.lastAmbientKey = key;
       updateActiveAmbient(key);
     });
     els.ambientButtons.appendChild(btn);
@@ -58,7 +72,10 @@ export async function renderTilesForChapter(ch) {
   // Playback (interrupts ambient)
   els.playbackButtons.innerHTML = "";
   [
-    { label: "Playback A", src: "./assets/audio/playbacks/melopoiia-trailer140404.mp3" },
+    {
+      label: "Playback A",
+      src: "./assets/audio/playbacks/melopoiia-trailer140404.mp3",
+    },
     { label: "Playback B", src: "./assets/audio/playbacks/playback1.mp3" },
   ].forEach((def) => {
     const b = document.createElement("button");

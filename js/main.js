@@ -89,6 +89,22 @@ window.addEventListener("load", async () => {
   });
   els.precacheAll.checked = localStorage.getItem("precacheAll") === "1";
 
+  function refreshMuteUI() {
+    els.muteBtn.setAttribute("aria-pressed", String(engine.muted));
+    els.muteBtn.textContent = engine.muted ? "🔇" : "🔊";
+  }
+  els.muteBtn.addEventListener("click", () => {
+    engine.toggleMuted();
+    refreshMuteUI();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key.toLowerCase() === "m") {
+      engine.toggleMuted();
+      refreshMuteUI();
+    }
+  });
+  refreshMuteUI();
+
   // Start at chapter with start=true, else #0, else first
   const start =
     STATE.chapters.find((c) => c.start) ||

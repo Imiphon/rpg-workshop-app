@@ -1,6 +1,6 @@
 // sw.js – robust update + network-first for app shell
 
-const SW_VERSION = "2025-08-12-01"; // bump on every deploy
+const SW_VERSION = "2025-08-12-02"; // bump on every deploy
 const CACHE_STATIC = `melopoiia-static-${SW_VERSION}`;
 const CACHE_DYNAMIC = `melopoiia-dynamic-${SW_VERSION}`;
 
@@ -11,17 +11,16 @@ const CORE = [
   "./chapters.json",
 
   // JS modules
-  "./main.js",
-  "./state.js",
-  "./engine.js",
-  "./audio-engine.js",
-  "./dom.js",
-  "./navigation.js",
-  "./tiles.js",
-  "./story.js",
-  "./solfege.js",
-  "./manifest.js",  
-  "./chapters.json",
+  "./js/main.js",
+  "./js/state.js",
+  "./js/engine.js",
+  "./js/audio-engine.js",
+  "./js/dom.js",
+  "./js/navigation.js",
+  "./js/tiles.js",
+  "./js/story.js",
+  "./js/solfege.js",
+  "./js/manifest.js",
 ];
 
 // Helper: detect app shell files (html/js/json/css)
@@ -38,10 +37,21 @@ function isAppShell(req) {
 }
 
 self.addEventListener("install", (evt) => {
-  evt.waitUntil(
-    caches.open(CACHE_STATIC).then(c => c.addAll(CORE))
-      .then(() => self.skipWaiting()) // take over immediately
-  );
+  evt.waitUntil((async () => {
+    const cache = await caches.open(CACHE_STATIC);
+    await Promise.allSettled(
+      CORE.map(async (url) => {
+        try {
+          const res = await fetch(url, { cache: "no-store" });
+          if (res.ok) await cache.put(url, res.clone());
+          else console.warn("[SW] CORE 404:", url);
+        } catch (err) {
+          console.warn("[SW] CORE fetch failed:", url, err);
+        }
+      })
+    );
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener("activate", (evt) => {

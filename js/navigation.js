@@ -46,7 +46,7 @@ export function goTo(id) {
     STATE.lastAmbientKey = ambKey; // <- hier erneuern
     updateActiveAmbient(ambKey);
   } else if (!ambKey) {
-    // Kapitel ohne ambient: nichts umschalten, aber UI-Highlight ggf. aktualisieren
+    // no ambient?: nothing changes, but UI-Highlight maybe update
     updateActiveAmbient(STATE.lastAmbientKey);
   }
 

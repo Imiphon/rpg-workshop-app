@@ -23,6 +23,10 @@ export const els = {
   volAmb: document.getElementById("vol-amb"),
   volFx: document.getElementById("vol-fx"),
   precacheAll: document.getElementById("precache-all"),
+  volAmb: document.getElementById("vol-amb"),
+  volFx: document.getElementById("vol-fx"),
+  precacheAll: document.getElementById("precache-all"),
+  muteBtn: document.getElementById("mute-btn"),
 };
 
 export function setMenu(open) {
