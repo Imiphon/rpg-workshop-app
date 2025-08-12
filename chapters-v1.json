@@ -7,7 +7,7 @@
     "story": {
       "text": "<p>Hinweis:</p><p>Namen werden während des Abenteuers bestimmt. Erst einmal nur die Charakterbögen verteilen.</p>",
       "links": [
-        {
+                {
           "label": "#01 Los geht's",
           "to": 1
         }
@@ -18,9 +18,7 @@
     "id": 1,
     "title": "Begleitung gefällig?",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Und Achtung! Jetzt geht’s los.</p><p>Ihr steht in einem tiefen, dunklen Wald. Vögel zwitschern, Eichhörnchen fiepen, es knistert und rauscht wie in einem gewöhnlichen Wald. Doch eines ist anders. Von irgendwoher nämlich, vernehmt ihr auch eine piepsige Stimme (Link = ./assets/audio/characters/gnom/hello.mp3). Ein Mensch ist das bestimmt nicht. Aber auch kein Tier. Verwundert schaut ihr euch um.</p><p>„Hey, ihr da! Ja, ihr. Schau mal hier herüber! Nein, weiter unten. Hier, auf dem Stein!“</p><p>Na sowas?! Vor euch auf dem Waldboden sitzt doch tatsächlich ein winziges Wesen und winkt euch aufgeregt zu. Es sieht ein wenig menschlich aus, doch irgendwie auch wieder nicht. Es hat einen winzigen Kopf mit dunklen Knopfaugen und einem breiten Mund, jedoch keine wirkliche Nase. Und anstelle von Haaren sitzen ihm mehrere schlingernde Fühler auf dem Kopf, die sich wie Algen im Wasser langsam hin- und herbewegen. Es hat zwei Arme und auch zwei Beine, die jedoch ständig zu verwischen scheinen, wie bei einem Geist, der noch immer nicht ganz seine endgültige Form gefunden hat. Mal schimmert das Wesen dunkelblau, dann hellblau, dann eher grünlich. Verwundert kommt ihr näher.</p><p>„Was guckst ihr denn so komisch?“, piepst das winzige Wesen. „Hast ihr noch nie einen Gnom gesehen?“ Sichtlich verwundert schüttelt der kleine Gnom seinen Kopf (Link = ./assets/audio/characters/gnom/hawk.mp3). „Aber hör mal: Ihr habt wohl nichts zu tun, was? Wenn ihr hier einfach so durch den Wald läufst. Wie wäre es denn da mit ’nem kleinem Abenteuer, hä?! Ich bin nämlich gerade auf dem Weg zur Zauberakademie von Klaster, denn da findet gerade eine Aufnahmeprüfung für neue Zauberlehrlinge statt.“ Der Gnom schnaubt verächtlich. „Nur wir Gnome sind eigentlich nicht zugelassen. Außer natürlich, ...“ und jetzt zwinkert er euch verschmitzt zu, „Außer natürlich sie sind in Begleitung eines Menschen. Also, pass auf …!\" Er beginnt verschwörerisch zu flüstern. „Wenn ihr mich in die Zauberakademie reinbringst, helfe ich euch die Aufnahmeprüfung zu bestehen und dann werde ich endlich ein berühmter Zauberer! Hua! Harr, Harr!“ (Link = assets/audio/characters/gnom/dark-laugh.mp3)</p><p>Erschrocken schaut ihr in den Himmel hinauf. War das gerade ein Gewitterdonner? Ist doch eigentlich ein sonniger Tag heute. Der Gnom schaut euch einen Moment lang stolz an und winkt dann aufgeregt ab. „... Also, ich meine natürlich: Dann wirst DU ein berühmter Zauberer! ... mit einem berühmten Gnomen dazu. Na, was hältst ihr davon?“</p>",
       "links": [
@@ -47,9 +45,7 @@
     "id": 2,
     "title": "Was ist ein Gnom?",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Der Gnom richtet sich auf seinem Stein auf und räuspert sich kurz (Link = ./assets/audio/characters/gnom/hawk.mp3).</p><p>„Ja, nun. Also: Die Menschen nennen uns Gnome. Das kommt von einem ihrer alten Wörter und bedeutet soviel wie Geist, glaube ich. Wir erscheinen für euch Menschlinge meistens daumengroß, leben am liebsten in kleinen Spalten oder Steinpilzen - wenn wir nicht gerade in euren Zauberboxen sitzen. Wir haben für gewöhnlich Augen und Mund vorne am Kopf und Fühler oben drauf. Meistens haben wir auch Arme und Beine. Genau genommen ist das aber nur eine Erscheinungsform unter vielen. Und weil wir nur aus Wellen bestehen, sind wir auch dazu fähig, wie durch Gestein zu gehen, oder genauer gesagt: …“, er macht eine kurze Pause und zwinkert. „zu schwingen. Das was ihr fest nennt ist nämlich gar nicht fest. Es besteht auch nur aus Wellen (Link = ./assets/audio/characters/gnom/agree.mp3). Doch anstatt uns dafür zu bewundern, stecken sie uns lieber in kleine Boxen und lassen uns dort für sie arbeiten - kannst ihr euch das vorstellen?! Zauberboxen nennen sie das - dabei sind WIR es die die Arbeit machen und nicht die Boxen. … Aber was soll’s. Dort füttern sie einen zumindest mit Ahornsirup. Ja, ja. Auch wenn wir es nicht wirklich brauchen, wir lieben Ahornsirup! Soweit alles klar? Können wir jetzt endlich fortfahren? Und bringst ihr mich nun in die Akademie hinein oder nicht?“</p>",
       "links": [
@@ -72,9 +68,7 @@
     "id": 5,
     "title": "Was ist Klaster?",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Ach nun komm schon!“ (Link = ./assets/audio/characters/gnom/oioioi.mp3). Der kleine Gnom scheint überrascht. „Ihr kennt Klaster nicht?! Das ist die Stadt der Magier. Dort steht die berühmteste Zauberakademie des ganzen Landes. Ist gar nicht weit von hier. Wenn will ist es höchstens ein Tagesmarsch. Ich sage euch: ihr würdet es LIEBEN! Habt ihr vielleicht Lust mich dahin zu begleiten? Wie sieht’s aus?“</p>",
       "links": [
@@ -97,9 +91,7 @@
     "id": 6,
     "title": "Ach, nö",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Ihr winkt dankend ab und geht eurer Wege.</p><p>Was für eine verrückte Idee! Da sitzt ein winziger Gnom auf einem Stein im Wald und will euch überreden, Zauberei zu studieren. Ihr schüttelt belustigt den Kopf.</p><p>Gruppe einmal lachen lassen.</p><p>Wahrscheinlich war das gerade ein Tagtraum - soll ja vorkommen. Doch … Erschrocken bleibt ihr stehen. Jetzt habt ihr euch vor lauter Tagträumerei tatsächlich im Wald verlaufen. Mit einem unguten Gefühl im Bauch, setzt ihr den Weg vorsichtig fort. Allerdings, … so sehr ihr euch auch bemüht die Orientierung wiederzufinden, ihr habt mehr und mehr das Gefühl, euch immer tiefer im Wald zu verlaufen.</p><p>„Hey, ihr! Ja, ihr. Schau hier herüber! Nein, weiter unten. Hier, auf der Wurzel!“(Link = ./assets/audio/characters/gnom/hello.mp3)</p><p>Da sitzt doch schon wieder dieser Gnom! Ungläubig bleibt ihr stehen. „Ja, da staunst ihr was? Ich habe mir schon gedacht, dass ihr euch verlaufen würdest. Habe mir einfach euren Seelenton gemerkt. Seine Wellen schwingen noch in jedem Baum an dem ihr eben vorbeigelaufen bist. Damit ist es ganz einfach jemanden wiederzufinden. Keine große Sache sowas. ‚Gnomleicht‘, sozusagen. Und? Wie sieht’s aus, soll ich euch vielleicht helfen hier wieder rauszufinden? ... für einen kleinen Gefallen, natürlich.“</p>",
       "links": [
@@ -118,9 +110,7 @@
     "id": 7,
     "title": "Abgemacht",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Super, abgemacht!“, freut sich der Gnom und springt euch mit einem Satz auf die Schulter. „Mein Name ist übrigens Tromikon und wie heißt ihr?“</p><p>Z soll seinen Namen nennen. Hat Z bereits einen Namen aus Tonsilben, so geht es direkt mit #11 „Guter Name!“ weiter.</p><p>„Tatsächlich?“ Tromikon schüttelt sein winziges Köpfchen. „Klingt ja nicht sonderlich magisch. Weißt ihr, die hiesigen Zauberer haben alle einen Namen, der sich aus Ton- oder Rhythmussilben zusammensetzt. Mit eurem jetzigen Namen werden wir sicherlich nicht in die Zauberakademie hineingelassen. Ihr braucht also unbedingt noch einen anderen Namen - einen magischen Namen.“ Der kleine Gnom legt sein winziges Köpfchen schräg und starrt euch fragend an. „Denk mal nach. Seid ihr eher jemand, der mit Tönen zaubert oder mit Rhythmen, so wie die Bieds?“</p>",
       "links": [
@@ -139,9 +129,7 @@
     "id": 8,
     "title": "eher mit Tönen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Die hiesigen Zauberer haben alle einen Namen, der sich aus Tonsilben zusammensetzt“, erklärt Tromikon eifrig. „Das bedeutet, dass jeder Name auch eine ganz bestimmte Melodie besitzt. Ihr solltest die Melodie eures Namens am besten auch gleich mal üben und vielleicht sogar in Noten aufschreiben. Manchmal kann das nämlich wichtig sein. Sucht euch jetzt aber erst einmal euren Namen aus den Tonsilben der Zauberer zusammen.“</p><p>Im Folgenden die Tonsilben von C‘ bis C‘‘ chromatisch aufwärts (die Tonsilben sind eine Kombination verschiedener chromatischer Solfeggio-Tonleitern):</p><p>Namenssilben:</p><p>Do, Di-Ra, Re, Ri-Mu, Mi, Fa, Fe-Su, So, Si-Lo, La, Li-Tu, Ti, Do</p><p>Z sucht sich einen Namen aus beliebig vielen Tonsilben zusammen und schreibt ihn in den Charakterbogen. Die Silben stehen für eine chromatische Tonleiter. Di und Ra z.B. stehen für übermäßige Prime oder kleine Sekunde (in unseren Tonbeispielen also C# bzw. Db).</p><p>Sobald die Zauberer etwas gefunden hat, geht’s weiter #11.</p>",
       "links": [
@@ -156,9 +144,7 @@
     "id": 9,
     "title": "eher mit Rhythmen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Der Gnom nickt. „Ok, die Bieds tragen eher Namen, die etwas mit der Magie von Rhythmik zu tun haben. Als da wären:</p><p>Don oder Pon = Ein Schlag in das Zentrum der Trommel<br>Ko oder Do = kurzer Schlag ohne Resonanz<br>Ga = Handballen<br>Na = Fingerschlag<br>Ka = harter Schlag mit Handkante<br>Ruka = Eine Hand dämpft das Fell, während die andere hart zuschlägt<br>Kodo oder Doko = zwei schnell aufeinander folgende Schläge<br>Dogo = ein weicher Doppelschlag<br>Doro = ein Schlag der in einen Wirbel wechselt<br>Ku-Tu-Su = leichter Anschlag<br>Kusu-Tusu Suku = zwei schnelle leichte Schläge<br>Ka = geschlossener Anschlag<br>Ra oder Pa = offener Anschlag<br>Kara oder Raka = zwei schnelle scharfe Anschläge<br>Ho oder Ya = einfache Pause<br>Sa, So oder Ri = doppelte Pause<br>Sa = sanftes Streicheln</p><p>Z sucht sich einen Namen aus beliebig vielen Tonsilben zusammen und schreibt ihn in den Charakterbogen. Tipp: den Rhythmus des Namens gleich mal üben und vielleicht auch in Noten aufschreiben. (Übrigens: Die Silben entstammen den Lautsilben des indischen Raga und japanischen Kuchi showa)</p><p>Sobald die Zauberer etwas gefunden hat, geht’s weiter #11.</p>",
       "links": [
@@ -173,9 +159,7 @@
     "id": 11,
     "title": "Guter Name!",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Ja!“ Tromikon nickt zufrieden. „Die Namen klingen wahrlich zauberhaft! Damit müsste es eigentlich klappen. Na, dann los! In diese Richtung geht’s nach Klaster.“</p><p>Der Gnom schwingt sich auf und zeigt in eine Richtung zwischen den Bäumen hindurch. Ihr atmet noch einmal tief durch und setzt euch dann in Bewegung. War das jetzt wirklich eine kluge Entscheidung? Aber, hey! Egal! Jetzt macht ihr euch erstmal auf den Weg. Was kann schon groß passieren, wenn man sich auf den Weg zu einer Aufnahmeprüfung macht? Ein leichtes Kribbeln läuft euch dennoch über den Rücken, während ihr euch ausmalt, wie wohl das Leben eines Zauberers aussehen könnte.</p><p>Tipp: aus der Position des Gnoms heraus mit Z frei reden, helfen oder etwas erklären. Er ist jetzt ein ständiger Wegbegleiter.</p>",
       "links": [
@@ -190,9 +174,7 @@
     "id": 12,
     "title": "Ende Gelände",
     "ambient": "amb-forest",
-    "npcs": [
-      "groschums"
-    ],
+    "npcs": ["groschums"],
     "story": {
       "text": "<p>Wütend stampft ihr weiter in den weiten Wald hinein. Soweit kommt es noch, dass man sich von so einem Wicht abhängig macht. Doch leider, leider war das die einzige Chance ungeschoren aus diesem Dickicht wieder herauszufinden. Nun muss eure Spielfigur bis zum Ende eures Lebens durch den dunklen Klasterwald irren - und bei den Monstern, die hier herumlaufen, ist das Ende auch fast schon da. Wartet einen Moment … Jetzt gleich … Einen Taktschlag noch … Jetzt! (Link = ./assets/audio/characters/groschums/attack.mp3)</p><p>Ja, das war ein Groschum - die sind wirklich unangenehm. Euer Abenteuer endet hier. Also, am besten wir starten gleich nochmal durch - jetzt wisst ihr es ja besser.</p>",
       "links": [
@@ -211,21 +193,12 @@
     "id": 13,
     "title": "Waldspaziergang",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
       "text": "<p>Entspannt schwebt der kleine Gnom um euch herum und lotst euch zwischen den Bäumen hindurch. Dann stoppt er plötzlich und bedeutet euch stehenzubleiben. Leise flüstert er: „Pst! Hört ihr das?“</p><p>Ihr lauscht (Link = ./assets/audio/sp-effects/axt.mp3)</p><p><em>Die Zauberer sollen die Axt erkennen.</em></p><p>„Ja, genau! Da ist ein Holzfäller in der Nähe. Aber er hat ein Problem! Kommt, wir schauen mal nach.“ Ihr folgt eine Weile lang dem Geräusch bis ihr zu einem schmalen Pfad gelangt. Aus einer Richtung vernehmt ihr leise Axtschläge, in die andere Richtung führt der Pfad auf einen großen runden Felsen zu.</p>",
       "links": [
-        {
-          "label": "#14 in Richtung der Axtschläge",
-          "to": 14
-        },
-        {
-          "label": "#19 in Richtung des Felsens.",
-          "to": 19
-        }
+        { "label": "#14 in Richtung der Axtschläge", "to": 14 },
+        { "label": "#19 in Richtung des Felsens.", "to": 19 }
       ]
     }
   },
@@ -233,29 +206,14 @@
     "id": 14,
     "title": "Der Holzfäller",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
       "text": "<p>Nachdem ihr eine Weile lang dem Pfad in Richtung der Axtschläge gefolgt bist, gelangst ihr an eine Lichtung, auf der ein Holzfäller (Link = ./assets/audio/characters/woodshopper/sigh.mp3) verzweifelt versucht, einen Baum zu fällen (Link = ./assets/audio/characters/woodshopper/axt.mp3).</p><p>„Zum Tritonus!“, schimpft der Holzfäller. „Ist das zu glauben?! Ich bekomme heute einfach keinen einzigen Baum gefällt. So ein verterzter Wellenschrat macht sich einen Spaß mit mir und hält jedes Mal dagegen, wenn ich zuschlage. Ich könnte zwar seinen Abwehrzauber hören und dann im richtigen Moment zuschlagen. Aber dafür müsste ich mein Ohr an den Stamm legen. Und dann könnte ich natürlich nicht gleichzeitig mit meiner Axt zuschlagen.“ Noch einmal schlägt er wütend mit seiner Axt auf den Baum ein (Link = ./assets/audio/characters/woodshopper/axt.mp3), doch es ist tatsächlich kein Kratzer zu sehen (Link = ./assets/audio/characters/tree-ghost/cheering.mp3). Seufzend (Link = ./assets/audio/characters/woodshopper/sigh.mp3) lehnt sich der Holzfäller an den Baum.</p><p>Ihr lauschst einen Moment lang konzentriert. Und tatsächlich! Ganz leise hört ihr eine Art Pulsschlag (Link = ./assets/audio/characters/tree-ghost/puls.mp3) im Baum.</p><p>„Es ist zum Verrücktwerden!“, jammert der Holzfäller. „Wenn mir nur jemand den Puls des Baumes vorklatschen würde. Dann könnte ich immer im richtigen Moment zuschlagen. Das würde bestimmt klappen! Magst ihr mir vielleicht helfen? Ich würde euch dafür auch bezahlen. Sagen wir, einen Silberfaden für jeden Baum?“</p>",
       "links": [
-        {
-          "label": "#15 Was ist denn ein Silberfaden, bitte?",
-          "to": 15
-        },
-        {
-          "label": "#16 Was ist denn ein Wellenschrat?",
-          "to": 16
-        },
-        {
-          "label": "#17 dem Holzfäller helfen?",
-          "to": 17
-        },
-        {
-          "label": "#18 soll er sich gefälligst selbst helfen.",
-          "to": 18
-        }
+        { "label": "#15 Was ist denn ein Silberfaden, bitte?", "to": 15 },
+        { "label": "#16 Was ist denn ein Wellenschrat?", "to": 16 },
+        { "label": "#17 dem Holzfäller helfen?", "to": 17 },
+        { "label": "#18 soll er sich gefälligst selbst helfen.", "to": 18 }
       ]
     }
   },
@@ -263,33 +221,18 @@
     "id": 15,
     "title": "Was ist ein Silberfaden?",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
-      "text": "<p>„Was?! Ihr wisst nicht was ein Silberfaden ist (Link = ./assets/audio/characters/woodshopper/wow.mp3) ? Na hört mal! Das sind dünne silberne Fäden aus magischen Klängen und unsere Währung hier auf Ionoï. Damit könnt ihr euch alles kaufen, was ihr möchtet. Passt mal auf, so klingt einer.“ Er hält ein kleines Säckchen in die Höhe und schüttelt es (Link = ./assets/audio/sp-effects/silver-string.mp3). „Ah! Der süße Klang von Silberfäden.“</p>",
+      "text": "<p>„Was?! Ihr wisst nicht was ein Silberfaden ist (Link = ./assets/audio/characters/woodshoppper/wow.mp3) ? Na hört mal! Das sind dünne silberne Fäden aus magischen Klängen und unsere Währung hier auf Ionoï. Damit könnt ihr euch alles kaufen, was ihr möchtet. Passt mal auf, so klingt einer.“ Er hält ein kleines Säckchen in die Höhe und schüttelt es (Link = ./assets/audio/sp-effects/silver-string.mp3). „Ah! Der süße Klang von Silberfäden.“</p>",
       "links": [
-        {
-          "label": "#16 Und was ist ein Wellenschrat?",
-          "to": 16
-        },
-        {
-          "label": "#17 dem Holzfäller helfen?",
-          "to": 17
-        },
+        { "label": "#16 Und was ist ein Wellenschrat?", "to": 16 },
+        { "label": "#17 dem Holzfäller helfen?", "to": 17 },
         {
           "label": "#18 Kein Interesse. Soll er sich gefälligst selbst helfen.",
           "to": 18
         },
-        {
-          "label": "#21 Zurück zum Kobold am Felsen",
-          "to": 21
-        },
-        {
-          "label": "#31 Zurück zum Kobold am Fluss",
-          "to": 31
-        }
+        { "label": "#21 Zurück zum Kobold am Felsen", "to": 21 },
+        { "label": "#31 Zurück zum Kobold am Fluss", "to": 31 }
       ]
     }
   },
@@ -297,25 +240,13 @@
     "id": 16,
     "title": "Was ist ein Wellenschrat?",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
       "text": "<p>„Der Wellenschrat ist eine lebendige Welle, die man sogar hören kann, wenn man ganz genau hinhört. Am liebsten lebt ein Wellenschrat in Bäumen. In dem von einem Wellenschrat beschwingten Baum, können sich sogar Astlöcher bilden, die wie Augen und Mund aussehen. Das macht der Wellenschrat aber nur, um freundlicher auszusehen, wenn er mit euch redet.</p><p>Ihr könnt seinen Puls hören, wenn ihr gut lauscht.</p><p><em>Die Spieler sollen noch einmal horchen.</em></p><p>Manchmal beginnen sie auch ganz unheimlich zu rufen (Link = ./assets/audio/characters/tree-ghost/puls.mp3). Ja, ein Wellenschrat kann sogar sprechen. Aber Angst muss man eigentlich keine haben, sie schwingen ja immer nur in Bäumen.“</p>",
       "links": [
-        {
-          "label": "#16 Was ist denn ein Silberfaden?",
-          "to": 15
-        },
-        {
-          "label": "#17 dem Holzfäller helfen?",
-          "to": 17
-        },
-        {
-          "label": "#18 soll er sich gefälligst selbst helfen.",
-          "to": 18
-        }
+        { "label": "#16 Was ist denn ein Silberfaden?", "to": 15 },
+        { "label": "#17 dem Holzfäller helfen?", "to": 17 },
+        { "label": "#18 soll er sich gefälligst selbst helfen.", "to": 18 }
       ]
     }
   },
@@ -323,12 +254,9 @@
     "id": 17,
     "title": "Hilfe für den Fäller",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
-      "text": "<p>„Großartig!“, freut sich der Holzfäller (Link = ./assets/audio/characters/tree-ghost/puls.mp3). „Also klopfe entweder den Puls des Wellenschrates mit oder verzaubere ihn, wenn ihr einen geeigneten Zauber kennst. Dann kann ich endlich den Baum fällen.“</p><p><em>Z muss dem Holzfäller nun helfen und den „Puls“ des Wellenschrates mitklatschen bzw. auf dem Instrument mitspielen. Geben Sie ein Metrum oder Rhythmus vor. Wählen Sie alternativ einen „eigenen Bannzauber“ der den Wellenschrat vertreibt.</em></p><p><em>Kommentieren sie die Spieler mit den Audios vom woodshopper.</em></p><p>Klappt alles, dann: Timber! (Link = ./assets/audio/characters/woodshopper/timber.mp3)</p><p>Hilft gar nichts mehr, dann holt der Holzfäller die Kettensäge heraus (Link = ./assets/audio/characters/woodshopper/chainsaw.mp3) und man sucht evtl. einen anderen Baum.</p><p>Wenn es geschafft ist, geht’s weiter.</p><p>„Bravo! Vielen Dank, für eure Hilfe!“, jubelt der Holzfäller (Link = ./assets/audio/characters/woodshopper/cheering.mp3) und gibt euch einen summenden und glitzernden Silberfaden zur Belohnung. „Hier“, sagt er, „damit könnt ihr euch eine Menge schöner Dinge kaufen. Wollt ihr euch vielleicht noch mehr verdienen? Ich bin sicher, der Wellenschrat lauert mir schon gleich im nächsten Baum wieder auf, um mich zu ärgern.“</p><p><em>Wenn die Spieler wollen, gibt es noch eine Runde.</em></p>",
+      "text": "<p>„Großartig!“, freut sich der Holzfäller (Link = ./assets/audio/characters/tree-ghost/puls.mp3). „Also klopfe entweder den Puls des Wellenschrates mit oder verzaubere ihn, wenn ihr einen geeigneten Zauber kennst. Dann kann ich endlich den Baum fällen.“</p><p><em>Z muss dem Holzfäller nun helfen und den „Puls“ des Wellenschrates mitklatschen bzw. auf dem Instrument mitspielen. Geben Sie ein Metrum oder Rhythmus vor. Wählen Sie alternativ einen „eigenen Bannzauber“ der den Wellenschrat vertreibt.</em></p><p><em>Kommentieren sie die Spieler mit den Audios vom woodshopper.</em></p><p>Klappt alles, dann: Timber! (Link = ./assets/audio/characters/woodshoppper/timber.timber.mp3)</p><p>Hilft gar nichts mehr, dann holt der Holzfäller die Kettensäge heraus (Link = ./assets/audio/characters/woodshoppper/chainsaw.mp3) und man sucht evtl. einen anderen Baum.</p><p>Wenn es geschafft ist, geht’s weiter.</p><p>„Bravo! Vielen Dank, für eure Hilfe!“, jubelt der Holzfäller (Link = ./assets/audio/characters/woodshoppper/cheering.mp3) und gibt euch einen summenden und glitzernden Silberfaden zur Belohnung. „Hier“, sagt er, „damit könnt ihr euch eine Menge schöner Dinge kaufen. Wollt ihr euch vielleicht noch mehr verdienen? Ich bin sicher, der Wellenschrat lauert mir schon gleich im nächsten Baum wieder auf, um mich zu ärgern.“</p><p><em>Wenn die Spieler wollen, gibt es noch eine Runde.</em></p>",
       "links": [
         {
           "label": "#19 Weiterziehen Richtung großen runden Felsen.",
@@ -353,17 +281,11 @@
     "id": 18,
     "title": "Keine Hilfe für den Fäller",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
       "text": "<p>Ihr wünschst dem Holzfäller noch viel Erfolg und verschwindest schleunigst über einen Pfad, der von der Lichtung wegführt.</p><p>Puh! Holzfällerarbeiten sind echt nicht euer Ding!</p>",
       "links": [
-        {
-          "label": "#19 Weiter geht’s",
-          "to": 19
-        },
+        { "label": "#19 Weiter geht’s", "to": 19 },
         {
           "label": "#21 Wenn Z schon einmal beim Kobold gewesen ist, geht’s hier lang.",
           "to": 21
@@ -375,26 +297,16 @@
     "id": 19,
     "title": "Der Kobold",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "goblin",
-      "groschums"
-    ],
+    "npcs": ["gnom", "goblin", "groschums"],
     "story": {
       "text": "<p>Der Pfad windet sich eine Weile kreuz und quer durch den Wald, bis ihr schließlich vor dem großen runden Felsen steht. Da erschallt neben euch plötzlich ein fieses Kichern. (Link = ./assets/audio/characters/goblin/laugh-long.mp3)</p><p>Ein grüner Kobold steht dort unter einem Baum, und begrüßt euch mit breitem Grinsen.</p><p>„Also an eurer Stelle würde ich da jetzt nicht einfach so weitermarschieren. Hinter dem Felsen lauern nämlich ein paar Groschums. Ihr weißt nicht, was ein Groschum ist!?“ Der Kobold kichert erneut (Link = ./assets/audio/characters/goblin/laugh-evil.mp3).</p><p>„Nun, dann nehmt euch in Acht! Diese grausigen Raubtiere machen mit euch kurzen Prozess. Ihr könntet natürlich einen Wirrwarrzauber wirken. Mit so etwas kommt ihr vermutlich heil an diesen Untieren vorbei. Wenn ihr noch keine passende Zauberformel habt, kann ich euch auch gerne eine beibringen (Link = ./assets/audio/characters/goblin/laugh-evil2.mp3). … Allerdings bräuchte ich eine gewisse Entschädigung für meine Mühen. Sagen wir einen Silberfaden? Den Weg hinauf, könnt ihr euch immer einen beim Holzfäller verdienen, falls ihr keinen besitzt. Was haltet ihr davon?“</p>",
       "links": [
-        {
-          "label": "#22 Wir haben einen Silberfaden.",
-          "to": 22
-        },
+        { "label": "#22 Wir haben einen Silberfaden.", "to": 22 },
         {
           "label": "#23 Wir brauchen keine Tarnung und kommen auch so am Felsen vorbei.",
           "to": 23
         },
-        {
-          "label": "#20 Ok, lieber umkehren",
-          "to": 20
-        }
+        { "label": "#20 Ok, lieber umkehren", "to": 20 }
       ]
     }
   },
@@ -402,17 +314,11 @@
     "id": 20,
     "title": "Nochmal zurück",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "woodshopper"
-    ],
+    "npcs": ["gnom", "woodshopper"],
     "story": {
       "text": "<p>Das muss ja nun wirklich nicht sein! Sich fressen lassen von so einem Groschum - oder wie die heißen. Dann doch lieber zum Holzfäller und sich noch schnell was dazuverdienen.</p><p>Ihr betrittst die Lichtung und der Holzfäller winkt euch erfreut zu, als er euch erblickt. „Hallo! Magst ihr euch vielleicht einen Silberfaden verdienen?“</p>",
       "links": [
-        {
-          "label": "#15 Was ist denn überhaupt ein Silberfaden?",
-          "to": 15
-        },
+        { "label": "#15 Was ist denn überhaupt ein Silberfaden?", "to": 15 },
         {
           "label": "#17 Frag nicht! Sag mir lieber was ich tun muss.",
           "to": 17
@@ -424,26 +330,16 @@
     "id": 21,
     "title": "Zurück beim Kobold",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "goblin",
-      "groschums"
-    ],
+    "npcs": ["gnom", "goblin", "groschums"],
     "story": {
       "text": "<p>„Hallo! Und?“ Fragt euch der Kobold während er seine grüne Hand aufhält (Link = ./assets/audio/characters/goblin/hello.mp3). „Wollt ihr jetzt einen Zauber lernen?“</p>",
       "links": [
-        {
-          "label": "#22 Hier, hast du deinen Silberfaden!",
-          "to": 22
-        },
+        { "label": "#22 Hier, hast du deinen Silberfaden!", "to": 22 },
         {
           "label": "#23 Wir haben keine Angst vor diesen Groschums.",
           "to": 23
         },
-        {
-          "label": "#20 Wir müssen nochmal zurück!",
-          "to": 20
-        },
+        { "label": "#20 Wir müssen nochmal zurück!", "to": 20 },
         {
           "label": "#23 Wir können schon zaubern und nehmen es mit den Groschums auf.",
           "to": 23
@@ -455,22 +351,12 @@
     "id": 22,
     "title": "Wirrwarrzauber lernen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "goblin",
-      "groschums"
-    ],
+    "npcs": ["gnom", "goblin", "groschums"],
     "story": {
       "text": "<p><em>Die Spieler zahlen einen Silberfaden!</em> (Link = ./assets/audio/sp-effects/silver-string.mp3)</p><p>Der Kobold stopft sich den Silberfaden in die Tasche und kichert vergnügt (Link = ./assets/audio/characters/goblin/laugh-long.mp3). „Wunderbar! Wunderbar! Dann kann es ja los gehen. Also aufgepasst: Dieser Wirrwarr Zauber sorgt dafür, dass die Groschums völlig vergessen werden, euch noch fressen zu wollen. Und wenn ihr es euch zutraus, zeige ich euch auch noch einen solch wirren Wirrwarr Zauber, dass ihr sogar Mellots oder Menschen verwirren kannst, so dass sie euch nicht mehr beachten werden. Bist ihr soweit? In Ordnung.“</p><p><em>Lassen Sie Z in gleichmäßigem Tempo durchs Zimmer laufen und entsprechend der Akzente den einen Taketina-Rhythmus klatschen und sprechen. Alternativ zu den „Taketina“-Rhythmen funktionieren natürlich auch andere 2er/3er Silben. Tipp: Wenn möglich noch immer als Kobold mit den Spielern sprechen!</em></p><p>Offenbar scheint ihr den Zauber zu beherrschen, der Kobold scheint zufrieden (Link = ./assets/audio/characters/goblin/pleased.mp3). „Umso schneller ihr den Zauber sprechen könnt, umso mehr Verwirrung werdet ihr damit stiften. Aber Vorsicht!“, er hebt noch einmal mahnend den Finger. „Ihr solltet keinen Fehler machen. Dann löst sich die Wirkung eures Zaubers in Schall und Rauch auf. Also, seid ihr wirklich bereit?“</p><p><em>Die Zauberer sind sich sicher.</em></p><p>„Na, dann lasst euch nicht länger aufhalten! (Link = ./assets/audio/characters/goblin/laugh-long.mp3)“</p>",
       "links": [
-        {
-          "label": "#23 kann losgehen",
-          "to": 23
-        },
-        {
-          "label": "#31 Z steht bereits am Fluss",
-          "to": 31
-        }
+        { "label": "#23 kann losgehen", "to": 23 },
+        { "label": "#31 Z steht bereits am Fluss", "to": 31 }
       ]
     }
   },
@@ -478,19 +364,13 @@
     "id": 23,
     "title": "Die Groschums",
     "ambient": "amb-groschums",
-    "npcs": [
-      "gnom",
-      "groschums"
-    ],
+    "npcs": ["gnom", "groschums"],
     "story": {
       "text": "<p>Vorsichtig schleicht ihr euch um den Felsen herum. Dahinter erkennt ihr jetzt einige bärengroße Tiere mit unheimlichen Köpfen und riesigen Mäulern. Sie knurren wie Löwen und ihre mächtigen Kiefer könnten euch sicherlich mit Leichtigkeit zermalmen. Keine schöne Vorstellung. Um unbemerkt an ihnen vorüberzukommen, solltet ihr jetzt am besten einen Wirrwarrzauber wirken.</p><p><em>Z muss beginnen, den Zauber zu wirken und sich dann mit … Schritten am Felsen vorbei schleichen. Sollte Z keinen Wirrwarrzauber wirken oder zu viele Fehler machen, darf man getrost die Flucht 12 game-over erklingen lassen. Lassen sie die Groschums ruhig auch nochmal brüllen, wenn’s hapert. groschum-bawler 2</em></p>",
       "links": [
+        { "label": "#25 Der Zauber gelingt.", "to": 25 },
         {
-          "label": "#24 Der Zauber gelingt.",
-          "to": 24
-        },
-        {
-          "label": "#17 Der Zauber gelingt nicht! Oder Z will aus anderen Gründen schnell zurück.",
+          "label": "#17 Der Zauber gelingt oder Z will aus anderen Gründen schnell zurück.",
           "to": 17
         }
       ]
@@ -500,36 +380,37 @@
     "id": 24,
     "title": "Der Wirrwarrzauber wirkt",
     "ambient": "amb-groschums",
-    "npcs": [
-      "gnom",
-      "groschums"
-    ],
+    "npcs": ["gnom", "groschums"],
     "story": {
-      "text": "<p>Euer Wirrwarrzauber entfaltet seine volle Wirkung. (Link = ./assets/audio/magic/success.mp3) Die bärengroßen Groschums bleiben wie angewurzelt stehen und blicken verwirrt in die Gegend (Link = ./assets/audio/characters/groschums/confused.mp3). Offenbar haben sie völlig vergessen, dass sie euch fressen wollten. Ihr nutzt die Gelegenheit und schleicht euch leise am Felsen vorbei.</p>",
+      "text": "<p>Euer Wirrwarrzauber entfaltet seine volle Wirkung. Die bärengroßen Groschums bleiben wie angewurzelt stehen und blicken verwirrt in die Gegend (Link = ./assets/audio/characters/groschums/confused.mp3). Offenbar haben sie völlig vergessen, dass sie euch fressen wollten. Ihr nutzt die Gelegenheit und schleicht euch leise am Felsen vorbei.</p>",
       "links": [
-        {
-          "label": "#25 Weiter",
-          "to": 25
-        }        
+        { "label": "#25 Weiter", "to": 25 },
+        { "label": "# Weiter", "to": 25 }
+    ]
+    }
+  },
+  {
+    "id": 24,
+    "title": "Zurück bei den Groschums",
+    "ambient": "amb-groschums",
+    "npcs": ["gnom", "groschums"],
+    "story": {
+      "text": "<p>Schon von Weitem erkennt ihr die Groschums, wie sie noch immer in der Sonne vor dem großen Felsen dösen. Wenn ihr es wirklich wagen wollt, solltet ihr jetzt den Wirrwarrzauber wirken.</p><p>Wenn Z einen Fehler macht, kann man die Groschums gerne mal brüllen lassen.</p><p>Geht der ganze Zauber in die Quinten bleibt nur die Flucht zurück.</p><p><em>Z spielt die Zauberformel</em></p>",
+      "links": [
+        { "label": "#17 weiter zum Holzfäller", "to": 17 },
+        { "label": "#31 zurück zur Wegkreuzung", "to": 31 }
       ]
     }
   },
-  
   {
     "id": 25,
     "title": "Der Wellenschrat",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Die Groschums spüren eure Nähe. Nervös schnüffeln sie in eure Richtung und knurren bedrohlich. Doch mit dem Zauber auf euren Lippen, sind sie nicht in der Lage euch genau zu fixieren. Und dann endlich liegt der Felsen mit den grässlichen Groschums hinter euch. Puh! Einmal tief durchatmen. Abseits des Weges knackt es im Gebüsch und ihr zuckst nervös zusammen. Streifen da etwa noch mehr von diesen Monstern durch den Wald?! Aber das sind wohl nur Vögel oder andere Kleintiere, die im Unterholz Futter suchen.</p><p>Ihr lauft eine Weile lang weiter den schmalen Pfad entlang und bekommt schon fast wieder das Gefühl, durch einen stinknormalen Wald zu laufen, da hört ihr plötzlich ein tiefes Stöhnen vom Wegesrand her. (Link = ./assets/audio/characters/tree-ghost/call2.mp3)</p><p>Nein, ein Groschum war das nicht! Aber auch kein Tier - zumindest keines, das ihr kennen würdest. Es klingt eher wie ein stöhnendes Gewitter. Seltsam. Vorsichtig schleicht ihr euch weiter den schmalen Weg entlang und kommt dem seltsamen Stöhnen dabei immer näher. Wollt ihr vielleicht vorsichtshalber noch einmal euren Wirrwarrzauber wirken?</p><p><em>Z dürfen hier gerne noch einmal einen Wirrwarrzauber wirken - ohne Folgen.</em></p><p>Schließlich bleibt ihr stehen und schaut euch in alle Richtungen um. Das Geräusch scheint direkt neben euch zu sein, aber da sind doch nur Bäume?! Wie kann das sein?! Doch, nein! Verwundert reibt ihr euch die Augen. Die eine Eiche dort beginnt sich doch tatsächlich zu bewegen?! Am Anfang seid ihr euch noch nicht ganz sicher, ob es nicht eher nur ein starker Wind ist, der den Baum mit viel Kraft zur Seite neigt, aber zu eurem Bedauern lässt sich das auf den zweiten Blick ausschließen. In der alten Eiche öffnet sich jetzt nämlich ein großes Astloch und beginnt wieder grollend zu stöhnen (Link = ./assets/audio/characters/tree-ghost/call.mp3)</p><p>„Da ist wieder ein Wellenschrat“, piepst es leise aus eurer Tasche heraus. Tromikon, der Gnom, zwinkert euch aufmunternd zu. „Keine Angst, die sind harmlos. Wellenschrate sind doch nur Wellen, die von Baum zu Baum schwingen. Na los, sagt ihm Hallo!“ Ihr gebt euch einen Ruck und macht ein paar Schritte auf den Baum zu, in dem sich so etwas wie ein Gesicht erkennen lässt. Als ihr eure Hand zum Gruße hebt, scheint der Schrat euch zu bemerken und fängt erneut an laut zu stöhnen (Link = ./assets/audio/characters/tree-ghost/call2.mp3).</p><p>„Oh, bitte könnt ihr mir helfen?“, erschallt es hohl aus dem Baumloch. „Dieser verterzte Klopfspecht verfolgt mich von Baum zu Baum. Egal was ich auch tu‘, er gibt einfach keine Ruh’.“</p><p>Im Geäst des Baumes bemerkt ihr einen bunten Vogel, der jetzt wie zur Begrüßung damit anfängt, einen Rhythmus auf den Baumstamm einzuhacken (Link = ./assets/audio/characters/beat-bird/hello.mp3). „Bitte“, fleht euch der Wellenschrat an, „ihr müsst mir helfen. Ihr müsst nur seinen Rhythmus nachklopfen, das macht ihn neugierig und lockt ihn von mir weg.“</p>",
       "links": [
-        {
-          "label": "#26 Wollt ihr dem Wellenschrat helfen?",
-          "to": 26
-        },
+        { "label": "#26 Wollt ihr dem Wellenschrat helfen?", "to": 26 },
         {
           "label": "#31 Auf keinen Fall! Wir helfen doch keinem sprechenden Baum!",
           "to": 31
@@ -541,10 +422,7 @@
     "id": 26,
     "title": "Locke den Klopfspecht",
     "ambient": "amb_01_wald-still",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Nachdem ihr euch etwas entfernt habt, damit der kleine Störenfried nicht gleich wieder zurückfliegt, lauscht ihr und versucht das Klopfen des Spechtes genau nachzuahmen.</p><p><em>Klopfen Sie einen eigenen Rhythmus vor, den Z nachklopfen muss. Tipp: Es geht auch der Rhythmus eines Stückes.</em></p><p>Sobald es Z gelingt, geht es weiter.</p><p>Ein großer Vogel kommt auf euch zugeflogen, landet vor euren Füssen und scheint euch etwas zuzurufen (Link = ./assets/audio/characters/beat-bird/flight.mp3).</p><p>„Uaah!“, brummt der Wellenschrat glücklich von seinem Baum herüber. \"Wenn ihr es wünscht, so bringe ich euch noch einen Schutzzauber gegen Eichhörnchen bei. Damit sie euch nichts anhaben können. Ansonsten hab tausend Dank und sei der Grundton ewig mit euch!\"</p>",
       "links": [
@@ -563,47 +441,24 @@
     "id": 27,
     "title": "Eichhörnchenschutz",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Der Wellenschrat schlägt zwei Äste seines Baumes aneinander und spielt euch einen Rhythmus vor, der euch vor dem Zauber eines diminuendischen Eichhörnchens beschützen soll. Höflich hörst ihr zu.</p><p><em>Einen Rhythmus vorgeben.</em></p><p>Nachdem ihr euch sicher seid, die Zauberformel zu beherrschen, bedankt ihr euch bei dem Schrat und setzt euren Weg fort.</p>",
-      "links": [
-        {
-          "label": "#28 Weiter geht’s",
-          "to": 28
-        }
-      ]
+      "links": [{ "label": "#28 Weiter geht’s", "to": 28 }]
     }
   },
   {
     "id": 28,
     "title": "Die Weggabelung",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>Die Bäume lichten sich und ihr gelangt an einen sehr breiten Fluss. Das andere Ufer lässt sich mit dem bloßen Auge kaum noch erkennen. Das muss der Oktav sein. Er ist der größte Fluss des ganzen Landes. Der Weg teilt sich hier in zwei Richtungen.</p><p>Während ihr noch abwägst, wo es wohl zur Stadt der Magier geht, stöhnt Tromikon plötzlich aus eurer Brusttasche heraus. „Oh, nein! Schon wieder dieser verterzte Kobold!“</p><p>Ihr braucht einen Augenblick, um zu begreifen, was er meint. Dann hört auch ihr das Lachen (Link = ./assets/audio/characters/goblin/laugh-long.mp3).</p><p>„Nehmt euch bloß in Acht!“, piepst Tromikon, während er hinter einem Stein verschwindet. „Der hat nichts als Blödsinn im Kopf!“</p><p>Ihr verkneift euch die Bemerkung, dass Tromikons Idee, der erste Gnomzauberer des Landes zu werden, auch nicht gerade vernünftig klingt und sucht stattdessen das Ufer nach dem Kobold ab. Vielleicht kann er euch ja nochmal helfen. Und da entdeckt ihr ihn auch schon zwischen dem hohen Ufergras. Er hantiert mit irgendeinem Instrument herum und ihr hört auch einen zarten Zauber.</p><p><em>Spiele einen Zauber vor.</em></p><p>Der Kobold hat einen Zauber gewirkt, denn wie aus dem Nichts, wächst da plötzlich eine sehr große Blume am Ufer empor. (Link = ./assets/audio/sp-effects/flower-grow.mp3)</p><p>Es erscheint euch alles recht putzig und niedlich, bis plötzlich eine Biene dahergeflogen kommt und Interesse an der schönen großen Blume zeigt. Das scheint dem Kobold jedoch überhaupt nicht zu gefallen. Unverzüglich lässt er eine andere Zaubermelodie erklingen.</p><p><em>Spiele einen Feuer-Zauber vor.</em></p><p>Und mit einem lauten Krachen geht die Biene in Flammen auf. (Link = ./assets/audio/sp-effects/explosion.mp3)</p><p>Euch kommt der Gedanke, dass dieser Kobold vielleicht doch nicht ganz so harmlos ist, wie es auf den ersten Blick erschien. Der Kobold dagegen lacht nur vergnügt. (Link = ./assets/audio/characters/goblin/laugh-evil.mp3)</p>",
       "links": [
-        {
-          "label": "#29 Trotzdem Hallo sagen.",
-          "to": 29
-        },
-        {
-          "label": "#39 Flussaufwärts",
-          "to": 39
-        },
-        {
-          "label": "#36 Flussabwärts",
-          "to": 36
-        },
-        {
-          "label": "#30 Zurück Richtung Holzfäller",
-          "to": 30
-        }
+        { "label": "#29 Trotzdem Hallo sagen.", "to": 29 },
+        { "label": "#39 Flussaufwärts", "to": 39 },
+        { "label": "#36 Flussabwärts", "to": 36 },
+        { "label": "#24 Zurück Richtung Holzfäller", "to": 24 }
       ]
     }
   },
@@ -611,50 +466,16 @@
     "id": 29,
     "title": "Ein Kobold am Fluss",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>„Oh, ah! Hallo! Habt ihr es also an den Groschums vorbeigeschafft, was?“ Der Kobold lacht. (Link = ./assets/audio/characters/goblin/laugh-evil2.mp3)</p><p>„Respekt, Respekt! Und jetzt weiter zur Stadt der Magier, wie? Na, dann passt mal auf: Den Weg Flussabwärts, da schwingt der Waldkönig… das is‘ nur ’n Wellenschrat, deshalb schwingt der auch nur. Der hat heute aber überhaupt keine gute Laune, da ihm eine Schatztruhe geklaut wurde. Ihr geht also besser Flussaufwärts. Dort geht es direkt in Richtung Klaster, das ist die Stadt der Magier. Obwohl, wenn ich so darüber nachdenke, ist das vielleicht auch nicht der richtige Weg. Vor kurzem erst sind nämlich zwei räuberische Mellots in diese Richtung gelaufen. Tja, die Qual der Wahl, nicht wahr? Aber hört mal, wollt ihr vielleicht noch einen Zauber kaufen?! Für einen Silberfaden würde ich euch das Geheimnis meines Feuerzaubers verraten - keine Megaflamme, aber gegen Ungeziefer oder zum Anheizen recht effizient. Und für einen weiteren Silberfaden verkaufe ich euch eine Zauberformel für Kletterblumen - Samen gibt’s umsonst dazu. Na, was meinst ihr? Ah, ja! Ihr denkt jetzt natürlich: Was ist schon dabei, eine Blume wachsen zu lassen? Aber, an MEINEN Blumen kann man hinaufklettern. Jawoll! Wie an einer Leiter, sag ich euch. Und jetzt erzählt mir nicht, so etwas könne man nicht gebrauchen. Oder wollt ihr vielleicht noch einen besseren Wirrwarrzauber lernen? Einen, der sogar Mellots und Menschen verwirrt? Na, was sagt ihr?“</p><p>Euch schwirrt der Kopf vor lauter Zaubern.</p>",
       "links": [
+        { "label": "#32 Ich möchte noch eine Zauberformel kaufen", "to": 32 },
+        { "label": "#39 Lieber Flussaufwärts", "to": 39 },
+        { "label": "#36 Lieber Flussabwärts", "to": 36 },
         {
-          "label": "#32 Ich möchte noch eine Zauberformel kaufen",
-          "to": 32
-        },
-        {
-          "label": "#39 Lieber Flussaufwärts",
-          "to": 39
-        },
-        {
-          "label": "#36 Lieber Flussabwärts",
-          "to": 36
-        },
-        {
-          "label": "#30 noch mehr Silberfäden beim Holzfäller verdienen.",
-          "to": 30
-        }
-      ]
-    }
-  },
-  {
-    "id": 30,
-    "title": "Zurück bei den Groschums",
-    "ambient": "amb-groschums",
-    "npcs": [
-      "gnom",
-      "groschums"
-    ],
-    "story": {
-      "text": "<p>Schon von Weitem erkennt ihr die Groschums, wie sie noch immer in der Sonne vor dem großen Felsen dösen. Wenn ihr es wirklich wagen wollt, solltet ihr jetzt den Wirrwarrzauber wirken.</p><p>Wenn Z einen Fehler macht, kann man die Groschums gerne mal brüllen lassen.</p><p>Geht der ganze Zauber in die Quinten bleibt nur die Flucht zurück.</p><p><em>Z spielt die Zauberformel</em></p>",
-      "links": [
-        {
-          "label": "#17 weiter zum Holzfäller",
-          "to": 17
-        },
-        {
-          "label": "#31 zurück zur Wegkreuzung",
-          "to": 31
+          "label": "#24 noch mehr Silberfäden beim Holzfäller verdienen.",
+          "to": 24
         }
       ]
     }
@@ -663,28 +484,16 @@
     "id": 31,
     "title": "Zurück an der Weggabelung",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>Ihr steht an der Weggabelung, und der Kobold schaut euch fragend an. „Na, was darf es noch sein?“</p>",
       "links": [
+        { "label": "#32 Ich möchte eine Zauberformel lernen", "to": 32 },
+        { "label": "#39 Ich gehe Flussaufwärts", "to": 39 },
+        { "label": "#36 Ich gehe Flussabwärts", "to": 36 },
         {
-          "label": "#32 Ich möchte eine Zauberformel lernen",
-          "to": 32
-        },
-        {
-          "label": "#39 Ich gehe Flussaufwärts",
-          "to": 39
-        },
-        {
-          "label": "#36 Ich gehe Flussabwärts",
-          "to": 36
-        },
-        {
-          "label": "#30 Ich gehe noch mehr Silberfäden beim Holzfäller verdienen.",
-          "to": 30
+          "label": "#24 Ich gehe noch mehr Silberfäden beim Holzfäller verdienen.",
+          "to": 24
         }
       ]
     }
@@ -693,25 +502,13 @@
     "id": 32,
     "title": "Zauberformel lernen",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>„Kein Problem!“, freut sich der Kobold. „Ich bringe euch gerne die Formel für einen Zauber bei. Dann gebt mir mal einen Silberfaden und wir können anfangen.“ Er kichert irgendwie komisch. (Link = ./assets/audio/characters/goblin/laugh-evil.mp3)</p><p><em>Die Spieler zahlen einen Silberfaden!</em> (Link = ./assets/audio/sp-effects/silver-string.mp3)</p>",
       "links": [
-        {
-          "label": "#35 Feuerzauber",
-          "to": 35
-        },
-        {
-          "label": "#33 Kletterblume",
-          "to": 33
-        },
-        {
-          "label": "#22 Wirrwarrzauber",
-          "to": 22
-        }
+        { "label": "#35 Feuerzauber", "to": 35 },
+        { "label": "#33 Kletterblume", "to": 33 },
+        { "label": "#22 Wirrwarrzauber", "to": 22 }
       ]
     }
   },
@@ -719,21 +516,12 @@
     "id": 33,
     "title": "Blumenzauber lernen",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>„Seht her!\", ruft der Kobold. \"Hier ist der Samen einer Kletterblume. Pflanze ihn in die Erde, an der Stelle wo die Blume wachsen soll und dann wirke folgenden Zauber…\"</p><p><em>Üben Sie mit Z den Blumenzauber ein (pdf).</em></p><p>Nach erfolgreichem Üben, geht es weiter.</p><p>„Holla die Waldfee!“, staunt der Kobold (Link = ./assets/audio/characters/goblin/amazed.mp3).</p><p>Vor euch schießt eine mächtig große (und verterzt stabil aussehende) Blume in die Höhe (Link = ./assets/audio/sp-effects/flower-grow.mp3).</p><p>Damit habt ihr quasi eine Leiter immer in der Hosentasche – nicht schlecht! Samen einer Kletterblume aufschreiben und den Blumenwuchs-Zauber.</p>",
       "links": [
-        {
-          "label": "#31 Ihr steht noch an der Wegkreuzung",
-          "to": 31
-        },
-        {
-          "label": "#32 Noch eine andere Zauberformel lernen",
-          "to": 32
-        },
+        { "label": "#31 Ihr steht noch an der Wegkreuzung", "to": 31 },
+        { "label": "#32 Noch eine andere Zauberformel lernen", "to": 32 },
         {
           "label": "#47 Ihr seid verzaubert und rennt direkt zum Nüssepflücken",
           "to": 47
@@ -745,38 +533,22 @@
     "id": 34,
     "title": "Schnell weiter",
     "ambient": "amb-forest",
-    "npcs": [
-      "groschums"
-    ],
+    "npcs": ["groschums"],
     "story": {
       "text": "<p>Schnell huscht ihr weiter. Vor euch taucht der große runde Felsen auf. Ihr wisst schon was das bedeutet.</p>",
-      "links": [
-        {
-          "label": "#23 Die Groschums",
-          "to": 23
-        }
-      ]
+      "links": [{ "label": "#23 Die Groschums", "to": 23 }]
     }
   },
   {
     "id": 35,
     "title": "Feuerzauber lernen",
     "ambient": "amb-river",
-    "npcs": [
-      "gnom",
-      "goblin"
-    ],
+    "npcs": ["gnom", "goblin"],
     "story": {
       "text": "<p>„Einen Feuerzauber wollt ihr also erlernen?! Nun gut. Um einen vernünftig Feuerzauber zu wirken, macht am Besten folgendes …“</p><p><em>Mit Z den Feuerzauber (pdf) einüben.</em></p><p>„Und jetzt konzentriert euch auf einen Gegenstand.“</p><p>Sobald der Zauber gelingt, geht’s weiter. (Link = ./assets/audio/sp-effects/explosion.mp3)</p><p><em>Beschreiben, wie das Feuer wirkt.</em></p><p>Der Kobold scheint zufrieden. (Link = ./assets/audio/characters/goblin/okay.mp3)</p><p>Ihr habt tatsächlich einen Feuerzauber erlernt.</p>",
       "links": [
-        {
-          "label": "#31 Ab zur Wegkreuzung",
-          "to": 31
-        },
-        {
-          "label": "#32 was anderes kaufen",
-          "to": 32
-        },
+        { "label": "#31 Ab zur Wegkreuzung", "to": 31 },
+        { "label": "#32 was anderes kaufen", "to": 32 },
         {
           "label": "#52 Ihr probierst die Formel an der gefundenen Truhe aus",
           "to": 52
@@ -788,21 +560,12 @@
     "id": 36,
     "title": "Der Waldkönig",
     "ambient": "amb-glade",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Ihr wandert den Weg Flussabwärts und befindet euch schon bald im dichten Unterholz des Waldes wieder. Nach kurzer Zeit trefft ihr auf eine kleine, schummerige Lichtung. Der Boden ist mit grauem Kies bedeckt und in der Mitte steht ein würfelförmiger etwa zwei Meter breiter und ebenso hoher Stein auf dem ein großer alter Baum wächst. Es sieht tatsächlich so als als würde der Baum auf dem Stein thronen. Die Lichtung ist von den angrenzenden Bäumen wie eine Mauer umzäunt - es sieht fast aus wie ein großer Saal, mit offenem Dach. Gegenüber im Gebüsch seht ihr einige alte Holzkisten in unterschiedlichen Größen herumstehen. In dem großen Baum, in der Mitte der Lichtung erkennt ihr ein Gesicht das zu schlafen scheint.</p><p>So leise, dass ihr es kaum noch verstehen könnt, flüstert euch Tromikon ins Ohr. „In dem alten Baum dort schwingt seine Majestät, der König des Waldes. Nimm euch bloß in Acht! Er benimmt sich oft recht ... königlich.“</p>",
       "links": [
-        {
-          "label": "#31 lieber zurück zur Wegkreuzung",
-          "to": 31
-        },
-        {
-          "label": "#38 Die Kisten untersuchen",
-          "to": 38
-        }
+        { "label": "#31 lieber zurück zur Wegkreuzung", "to": 31 },
+        { "label": "#38 Die Kisten untersuchen", "to": 38 }
       ]
     }
   },
@@ -810,60 +573,33 @@
     "id": 37,
     "title": "Die Kiste kehrt zurück",
     "ambient": "amb-glade",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Als ihr die Lichtung erreicht und mit der Kiste über den knirschenden Kies stapft, öffnet der König im Baum seine schwarzen, hohlen Augen und beginnt grauselig zu stöhnen. (Link = ./assets/audio/characters/tree-ghost/king-call.mp3)</p><p>Doch auch ein Lächeln huscht über seinen hölzernen Mund. „Hört, hört, ihr seid also zurückgekehrt“, brummt er zufrieden. „Das nenne ich wahre Aufrichtigkeit.\"</p><p>Es rauscht und knistert in seinen Blättern, als würdet ihr vor einem schönen Kaminfeuer sitzen. Ihr bemerkt, wie es immer wärmer um euch herum wird. Die Kiste scheint sich zu erhitzen. Dann senkt sich ein langer Ast herab und knackt in einem interessanten Rhythmus über die Kiste hinweg. Das Schloss in der Truhe klickt leises Klicken, dann springt der Deckel auf. (Link = ./assets/audio/sp-effects/chest-open.mp3)</p><p>Dutzende Silberfäden glitzern euch entgegen. (Link = ./assets/audio/sp-effects/silver-string-treasure.mp3)</p><p>„Nehmt euch zur Belohnung zehn Silberfäden. Ihr habt sie euch verdient.“</p><p>Hastig greift ihr euch zehn Silberfäden und lasst sie in euren Manteltaschen verschwinden. Dann verneigt ihr euch noch einmal höflich vor dem Königsbaum und geht wieder in Richtung Fluss zurück. Tromikon schwebt neben euch einher und freut sich. „Das war eine weise Entscheidung von euch, die Kiste zurückzubringen. Jetzt ist euch der König des Waldes wohlgesonnen. Das könnte irgendwann noch einmal sehr nützlich für euch werden. Aber jetzt lass uns endlich zur Stadt der Magier kommen. Ich will die Aufnahmeprüfung nicht verpassen.“</p><p>Ihr nickt und spürt, wie euch eine Welle aus Stolz durchdringt.</p>",
-      "links": [
-        {
-          "label": "#53 Zügig machst ihr euch auf den Weg.",
-          "to": 53
-        }
-      ]
+      "links": [{ "label": "#53 Zügig machst ihr euch auf den Weg.", "to": 53 }]
     }
   },
   {
     "id": 38,
     "title": "Wo ist mein Schatz?!",
     "ambient": "amb-glade",
-    "npcs": [
-      "gnom",
-      "tree-ghost"
-    ],
+    "npcs": ["gnom", "tree-ghost"],
     "story": {
       "text": "<p>Ein fürchterliches Donnern erschallt und der große Baum auf dem Stein beginnt sich unheimlich zu bewegen. (Link = ./assets/audio/characters/tree-ghost/call3.mp3)</p><p>„Ihr! Kleine Menschlinge! Was wollt ihr von meinem Schatz?!“</p><p>Der Baum starrt euch aus zwei dunklen Asthöhlen heraus zornig an und sein grausiges Donnern lässt euch vor Furcht in die Knie gehen.</p><p>„Geht! Findet die Diebe, die meine Truhe gestohlen haben und bringt sie mir zurück!“</p><p>Artig verbeugt ihr euch so tief, dass ihr fast nach vorne umfallt. Dann seht ihr nur noch zu, dass ihr hier ganz schnell wieder wegkommt.</p><p>„Seht ihr!“, piepst Tromikon aus der Hemdtasche heraus, während ihr durch den Wald rennt. „Ich habe euch doch gesagt: Er benimmt sich sehr königlich.“</p><p>Ihr spart euch eine Erwiderung und rennt lieber noch ein bisschen schneller zurück zur Weggabelung.</p>",
-      "links": [
-        {
-          "label": "#31 Weggabelung",
-          "to": 31
-        }
-      ]
+      "links": [{ "label": "#31 Weggabelung", "to": 31 }]
     }
   },
   {
     "id": 39,
     "title": "Origon der Wellenfischer",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Langsam aber stetig führt der Weg jetzt wieder vom Fluss weg, und die Bäume um euch herum werden dichter und dunkler. Nach einer Weile hört ihr vor euch eine piepsige Stimme, die fürchterlich vor sich hin heult und flucht. Sie klingt wie die von eurem kleinen Freund Tromikon dem Gnom, nur nicht so gut gelaunt. (Link = ./assets/audio/characters/gnom/crying.mp3)</p><p>„Kreuz-Neun und Tritonus! Diese verfluchten Fellköpfe!“</p><p>Als ihr näherkommt, erkennt ihr einen weiteren Gnom am Wegesrand, der wild und wütend herumhüpft und scheinbar versucht, bunte Glühwürmchen einzufangen.</p><p>Es summt und brummt in beachtlicher Lautstärke. (Link = ./assets/audio/sp-effects/silver-string-treasure.mp3)</p><p>„Mit dem Grundton zum Gruße!“, ruft Tromikon von eurer Schulter herunter. „Sag, wie ist euer Name? Und was ist passiert, dass hier so viele Wellenfische herumschwirren?“</p><p>„Hach!“, piepst der andere Gnom verzweifelt. „Gestattet, mein Name ist Origon und hier kamen gerade zwei Mellots vorbei und sind mir auf mein Schallfellsäckchen getreten. Jetzt haben sich alle Wellenfische daraus wieder befreit und mir ist ein ganzer Arbeitstag in den Orchestergraben gefallen.“</p><p>„Oh, das tut mir Leid zu hören!“, ruft Tromikon.</p><p>„Zumindest habe ich die Kiste, die sie bei sich trugen, mit einem Zauber vereist“, ergänzt Origon mit grimmigem Lächeln. „Ohne magisches Feuer werden sie die bestimmt nicht wieder aufbekommen. Das wird ihnen hoffentlich eine Lehre sein.“</p><p>„Das wird es ganz bestimmt!“, erwidert Tromikon mit fester Stimme. „Sag mal, Origon, gibt es hier etwa auch eine Gnomsiedlung in der Nähe?“</p><p>„Ja, nur ein paar Sprints entfernt. Aber ohne Wellenfische brauche ich gar nicht erst zurückzukehren.“</p><p>Der kleine Gnom blickt verzweifelt in die munter summende Wolke aus Wellenfischen um sich herum und beginnt wieder zu heulen. (Link = ./assets/audio/characters/gnom/crying.mp3)</p>",
       "links": [
-        {
-          "label": "#31 Weggabelung",
-          "to": 31
-        },
-        {
-          "label": "#40 helfen",
-          "to": 40
-        },
-        {
-          "label": "#49 weiter den Weg entlang",
-          "to": 49
-        }
+        { "label": "#31 Weggabelung", "to": 31 },
+        { "label": "#40 helfen", "to": 40 },
+        { "label": "#49 weiter den Weg entlang", "to": 49 }
       ]
     }
   },
@@ -871,24 +607,13 @@
     "id": 40,
     "title": "Wellen fischen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Die winzigen Knopfaugen des Gnoms leuchten vor Freude hell auf. „Ihr wollt mir tatsächlich helfen?“, piepst er vergnügt. „Oh, vielen Dank! Also gut, dann passt mal auf. Ihr sucht euch am besten erst einmal nur Wellenfische von einer Sorte heraus und fangt nur diese ein. Aber wirklich nur die eine Sorte, ansonsten kann es leicht passieren, dass sie sich gegenseitig wieder verjagen oder gar auffressen.“</p><p><em>Jeder Z soll sich einen (anderen!) Ton aussuchen und diesen wiedererkennen, sobald er ihn hört. Du spielst jetzt je nach Level alle Töne immer wieder durcheinander.</em></p><p>(alle Audios unter dem Link = ./assets/audio/chromatic-solf/AUDIO_NAME.mp3)</p><p>//als Buttons: Do, Di-Ra, Re, Ri-Mu, Mi, Fa, Fe-Su, So, Si-Lo, La, Li-Tu, Ti, Do</p><p>Danach geht es weiter.</p><p>Nach getaner Arbeit, knüpft der winzige Wellenfischer sein noch winzigeres Säckchen zusammen und strahlt euch überglücklich an. „Tausend Dank für eure tolle Hilfe! Wollt ihr vielleicht noch mit mir in die Gnomstadt kommen? Ich gebe euch auch gerne ein Schallfellsäckchen, als Dank für eure Hilfe.“ Fragend schaut ihr zu Tromikon. Der nickt und erklärt: „Schallfellsäckchen sind enorm praktisch, zum Transportieren von Zauberketten“, raunt er euch zu.</p>",
       "links": [
-        {
-          "label": "#42 in die Gnomstadt folgen",
-          "to": 42
-        },
-        {
-          "label": "#49 den Weg weiter",
-          "to": 49
-        },
-        {
-          "label": "#31 zurück zur Weggabelung",
-          "to": 31
-        }
+        { "label": "#42 in die Gnomstadt folgen", "to": 42 },
+        { "label": "#49 den Weg weiter", "to": 49 },
+        { "label": "#31 zurück zur Weggabelung", "to": 31 }
       ]
     }
   },
@@ -896,9 +621,7 @@
     "id": 41,
     "title": "Nochmal Origon",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Da sitzt doch noch immer der Wellenfischer-Gnom am Wegesrand und blickt euch erstaunt an. „Hallo, ihr schon wieder.“</p><p>Oder habt ihr bereits geholfen, aber wart noch nicht in der Gnomstadt? Dann könnt ihr das jetzt auch hier tun. Andernfalls gibt es ein kurzes Hallo mit dem Gnom und ihr könnt weiter Richtung Stadt der Magier oder zurück zur Weggabelung.</p>",
       "links": [
@@ -914,10 +637,7 @@
           "label": "#49 Wir wollen den Weg weiter zur Stadt der Magier",
           "to": 49
         },
-        {
-          "label": "#31 Wir wollen zurück zur Wegkreuzung",
-          "to": 31
-        }
+        { "label": "#31 Wir wollen zurück zur Wegkreuzung", "to": 31 }
       ]
     }
   },
@@ -925,20 +645,12 @@
     "id": 42,
     "title": "Die Gnomstadt",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Origon huscht so schnell wie der Schall durch das dichte Gestrüpp des Waldes. Ihr vermagst dem kleinen Wesen kaum mit euren Augen zu folgen. Doch zum Glück macht der Gnom alle paar Meter eine Pause und scheint energisch nach Luft zu schnappen. Das gibt euch die Gelegenheit, ihn jedesmal wieder einzuholen.</p><p>„Gnome können verterzt schnell sprinten“, erklärt Tromikon, während er lässig auf eurer Schulter sitzt. „Zwischendurch müssen wir jedoch immer wieder eine Atempause einlegen. Also, macht euch keine Sorgen. Er wird euch schon nicht davonlaufen.“ Tromikon grinst euch breit an, während ihr euch mühselig durchs Unterholz kämpft. Ihr seid euch nicht ganz sicher, ob er sich jetzt über euch lustig macht oder es einfach nur freundlich meint. Doch euch fehlt sowieso die Puste, um etwas bissiges zu erwidern.</p><p>„Seht nur, mein Zuhause!“, hört ihr da Origon endlich rufen. „Gleich da vorne, seht ihr? Ist es nicht wundervoll?“</p><p>Starte den neuen Ambient. (Link = ./assets/audio/ambient/amb-gnom-city.mp3)</p><p>Ihr müsst zweimal hinschauen, um wirklich etwas zu erkennen. Aber tatsächlich! Verwundert reibt ihr euch die Augen. In einer kleinen Senke, direkt vor euch, tummeln sich hunderte, wenn nicht gar tausende von winzigen Gnomen...</p>",
       "links": [
-        {
-          "label": "#43 Harfe stimmen helfen",
-          "to": 43
-        },
-        {
-          "label": "#45 Direkt zurück zum Weg",
-          "to": 45
-        }
+        { "label": "#43 Harfe stimmen helfen", "to": 43 },
+        { "label": "#45 Direkt zurück zum Weg", "to": 45 }
       ]
     }
   },
@@ -946,20 +658,12 @@
     "id": 43,
     "title": "Die Zaubermuschel",
     "ambient": "amb-glade",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Oh das ist wirklich zu großzügig von euch“, freut sich Origon und schiebt euch die Muschelharfe vor eure Füße. „Hört einmal genau hin. Diese drei Saiten klingen einfach nicht richtig.“</p><p>„Ich werde euch helfen.“, flüstert Tromikon. „Hey, Origon, hast ihr ein paar Wellenfische für mich?!“ Mit einem Satz greift der Gnom in sein eigenes Schallfellsäckchen und scheint dann irgendetwas in die Luft zu werfen. „Das ist ein Referenzton!“, piepst Tromikon. „Für die erste Saite auf der Muschel! Bringe die Harfensaite damit in Einklang.“</p><p>Immer den jeweiligen Referenzton spielen, einen falschen und dann Z entscheiden lassen.</p><p>(alle Töne unter ./assets/audio/tuning-test/{audio}.mp3)</p>",
       "links": [
-        {
-          "label": "#44 geschafft",
-          "to": 44
-        },
-        {
-          "label": "#45 Doch lieber zurück zum Weg",
-          "to": 45
-        }
+        { "label": "#44 geschafft", "to": 44 },
+        { "label": "#45 Doch lieber zurück zum Weg", "to": 45 }
       ]
     }
   },
@@ -967,26 +671,17 @@
     "id": 44,
     "title": "Gute Stimmung",
     "ambient": "amb-gnom-city",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>„Herrlich! Jetzt habe ich es endlich verstanden!“, schwärmt Origon begeistert und hüpft vergnügt von einem Bein aufs andere. „Hör mal, ihr könnt die Muschel gerne behalten, wenn ihr magst. Ich kann mir ja nun eine neue bauen, wo ich weiß, wie das mit dem Stimmen funktioniert.“</p><p><em>Z darf die Muschelharfe ins Inventar schreiben.</em></p><p>Danach verabschieden sich alle voneinander und Z begibt sich ...</p>",
-      "links": [
-        {
-          "label": "#45 Zurück zum Waldweg",
-          "to": 45
-        }
-      ]
+      "links": [{ "label": "#45 Zurück zum Waldweg", "to": 45 }]
     }
   },
   {
     "id": 45,
     "title": "Zauberhaftes Eichhörnchen",
     "ambient": "amb-squirrel",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Vorsichtig marschierst ihr durch das Dickicht des Waldes, zurück zum Weg, der euch zur Stadt der Magier führt. Weit kann es eigentlich nicht mehr sein. Bald hast ihr es geschafft und bist wieder unter Menschen. Doch gerade als ihr dabei seid wieder den Weg in Richtung Klaster zu betreten, raschelt etwas neben euch im Gebüsch. Verwundert blickt ihr euch um.</p><p>Ach, wie süß! Ein kleines Eichhörnchen kauert dort unter einem Baum! Das flauschige Fell lässt es wirklich putzig aussehen. Oh, jetzt macht es aber große Augen! Ob es sich wohl streicheln lässt? Bestimmt ist es hungrig. Oh, ja! Es schaut wirklich sehr hungrig aus!</p><p>Hat Z den Hörnchen-Schutzzauber erlernt, so muss dieser jetzt erfolgreich gewirkt werden.</p>",
       "links": [
@@ -1005,9 +700,7 @@
     "id": 46,
     "title": "Dem Zauber erlegen",
     "ambient": "amb-squirrel",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Es ist kein großes Geheimnis, dass diminuendische Eichhörnchen so ziemlich die dümmsten Geschöpfe auf der großen weiten Welt von Ionoï sind. Diminuendische Eichhörnchen sind so dumm, dass sie nicht einmal wissen, wie man auf einen Baum klettert. Genau genommen wissen sie nicht einmal, was ein Baum überhaupt ist. Sie haben auch keine Ahnung wie man als Eichhörnchen Nüsse sammelt, geschweige denn wie man diese aufbekommt oder warum gewöhnliche Eichhörnchen sich diese ganze Mühe mit suchen, sammeln, lagern und im Winter knacken überhaupt machen.</p><p>Kurz gesagt, würden diminuendische Eichhörnchen wie gewöhnliche Eichhörnchen leben, hätte die Natur einmal kurz ihr hässliches Kind namens Selektion gerufen und diese Spezies augenblicklich auf die für sie angemessene Zahl reduzieren lassen - nämlich auf NULL. Doch es kam anders.</p><p>Selektion ging an dem entscheidenden Abend nämlich auf eine wilde Party, anstatt auf Mutter Natur zu hören, ließ sich zuerst für das überraschende Ende einer stattlichen Anzahl von übergroßen Echsen auf einem weit entfernten Planeten feiern und ging dann auf eine Wette mit ihrer alten Widersacherin Evolution ein - was die beiden immer wieder auf Partys machten. Es ging um irgendwelche unbedeutenden braun-flauschigen Nager, die auf einem noch unbedeutenderen und ziemlich welligen Planeten am Rande des Universums lebten. Am nächsten Morgen hatte Selektion einen ungeheuren Kater (das sind Kopfschmerzen nach dem Feiern) und Evolution eine neue Spezies gewonnen.</p><p>Die Sache war natürlich nicht ganz fair gelaufen, denn Evolution hatte dafür gesorgt, dass diminuendische Eichhörnchen unglaublich niedlich sind. Sie sind so niedlich, dass sich selbst ein hungriger Wolf vor lauter Mitgefühl noch auf die Suche nach etwas zu knabbern macht, anstatt den dummen Nager einfach zum Frühstück zu verputzen. Selektion sollte man bis heute nicht auf den Vorfall ansprechen.</p><p>Diminuendische Eichhörnchen sitzen daher für gewöhnlich einfach am Wegesrand herum, bis irgendwer vorbeikommt und machen dann große Augen. Sie wissen in ihrer Beschränktheit natürlich nicht, warum sie das tun, doch es funktioniert. Und diesmal tut es das bei euch!</p><p>Zum Nüsse pflücken müsst ihr leider in einen Baum klettern, und dafür braucht ihr wiederum den Zauber für die Kletterblume vom Kobold, falls ihr ihn noch nicht habt.</p>",
       "links": [
@@ -1015,14 +708,8 @@
           "label": "#17 nochmal zum Holzfäller und Silberfäden verdienen.",
           "to": 17
         },
-        {
-          "label": "#31 Noch mal schnell was einkaufen",
-          "to": 31
-        },
-        {
-          "label": "#47 Ihr habt alles und geht Nüsse pflücken",
-          "to": 47
-        }
+        { "label": "#31 Noch mal schnell was einkaufen", "to": 31 },
+        { "label": "#47 Ihr habt alles und geht Nüsse pflücken", "to": 47 }
       ]
     }
   },
@@ -1030,51 +717,31 @@
     "id": 47,
     "title": "Nüsse pflücken",
     "ambient": "amb-squirrel",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Ihr suchst euch den nächstgelegenen Nussbaum und stopfst geschwind den Blumensamen des Kobolds unter dem Nussbaum. Ihr könnt ihr es kaum erwarten, dass die Blume endlich in die Höhe wächst.</p><p><em>Die Z müssen einen Kern aus dem Inventar nehmen und den Blumenzauber wirken.</em></p><p>Endlich sprießt ein dicker Stängel aus dem Erdreich und wächst immer weiter und weiter am Nussbaum empor in die Höhe. Jauchzend vor Glück, endlich ein paar Nüsse für dieses schnuffelige und ach so hungrige Eichhörnchen pflücken zu können, klettert ihr sogleich daran empor. Beim heiligen Grundton! Nüssepflücken kann ganz schön mühselig sein, doch ihr seid euch natürlich nicht zu schade, alles zu geben.</p><p>Irgendwann scheint das süße kleine Eichhörnchen satt zu sein, denn es verschwindet im nächstgelegenen Gebüsch (ohne auch nur Danke zu sagen!). Ihr klettert an der Blume wieder herab und schaut verdattert auf die Stelle, wo jetzt nur noch ein paar aufgebrochene Nussschalen liegen. Ernüchterung macht sich in euch breit, denn die Verzauberung vom Eichhörnchen lässt schnell nach. Habt ihr das alles eben tatsächlich getan? All die Arbeit für ein Eichhörnchen?! Etwas beschämt setzt ihr euren Weg fort. Tromikon hat sich die ganze Zeit über nicht gemeldet - vielleicht hat er ja geschlafen und von eurem peinlichen Verhalten gar nichts mitbekommen.</p>",
-      "links": [
-        {
-          "label": "#49 Nun, sei es drum. Weiter geht’s!",
-          "to": 49
-        }
-      ]
+      "links": [{ "label": "#49 Nun, sei es drum. Weiter geht’s!", "to": 49 }]
     }
   },
   {
     "id": 48,
     "title": "Entkommen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Uff! Das war knapp. Beinahe wärst ihr diesem kleinen flauschigen Eichhörnchen auf den Leim gegangen. Selbst mit dem Schutzzauber habt ihr noch die Kraft spüren können die diesem niedlichen Tierchen innewohnt. Wohlmöglich wärst ihr noch in einen Baum geklettert und hättest Nüsse gepflückt - und die Nussbäume in dieser Gegend sind nicht gerade leicht zu erklimmen. Nun sei es drum, weiter geht’s den Weg entlang.</p>",
-      "links": [
-        {
-          "label": "#49 Weiter geht’s",
-          "to": 49
-        }
-      ]
+      "links": [{ "label": "#49 Weiter geht’s", "to": 49 }]
     }
   },
   {
     "id": 49,
     "title": "Die Mellots",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "mellots"
-    ],
+    "npcs": ["gnom", "mellots"],
     "story": {
       "text": "<p>Nachdem ihr eine Weile lang dem Weg in Richtung Stadt weitergelaufen bist, vernimmst ihr plötzlich vor euch seltsame</p><p>Ambient wechseln: (Link = ./assets/audio/ambient/amb-mellots-wisper.mp3)</p><p>Vorsichtig schleichst ihr euch näher heran und erkennt zwei menschenähnliche Wesen, die jedoch mit dichtem Fell und Hundeköpfen ausgestattet sind. Das müssen Mellots sein - oder „Fellköpfe“, wie sie auch manchmal genannt werden. Schnell versteckst ihr euch hinter einem Baum.</p><p>Neben den beiden steht eine kleine Kiste am Wegesrand. Und ganz offenbar bekommen die beiden sie nicht auf. Nach einer Weile setzen sie sich enttäuscht auf den Boden, ohne dabei noch auf die Kiste zu achten.</p>",
       "links": [
-        {
-          "label": "#50 Euch die Kiste schnappen?",
-          "to": 50
-        },
+        { "label": "#50 Euch die Kiste schnappen?", "to": 50 },
         {
           "label": "#53 Oder lieber an den Mellots vorbei und vorsichtig in Richtung Klaster schleichen?",
           "to": 53
@@ -1086,10 +753,7 @@
     "id": 50,
     "title": "Die Schatzkiste",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "mellots"
-    ],
+    "npcs": ["gnom", "mellots"],
     "story": {
       "text": "<p>Die Versuchung ist einfach zu groß! Ihr nehmt euch vor, noch einmal einen Wirrwarrzauber zu wirken und dann vorsichtig an den zwei Mellots vorbei bis zu der Kiste zu schleichen.</p><p><em>Achtung! Es sollte ein besserer Wirrwarrzauber als bei den Groschums gewirkt werden. Mellots sind sehr viel schlauer. Wenn es nicht klappt, müsst ihr flüchten.</em></p><p>Reagiere mit entsprechenden Audios aus dem Mellot-Sounds-Ordner.</p>",
       "links": [
@@ -1112,33 +776,18 @@
     "id": 51,
     "title": "Verschlossen",
     "ambient": "amb-glade",
-    "npcs": [
-      "gnom",
-      "mellots"
-    ],
+    "npcs": ["gnom", "mellots"],
     "story": {
       "text": "<p>Stolz untersucht ihr eure Beute. Die Truhe ist nicht sonderlich groß und hat eine seltsame Gravur an der Stelle, wo eigentlich das Schloss sein müsste. Als ihr sie vorsichtig anhebt, bemerkt ihr eine eisige Kälte. Das Schloss scheint vereist zu sein. Vermutlich ließe es sich aber mit einem Feuerzauber auch wieder enteisen.</p><p>Die Gravur erinnert euch an eine Notenschrift. Vorsichtig streichst ihr über das silberne Schildchen und plötzlich erklingt aus dem Inneren der Truhe das Klicken eines Metrums. Sicherlich muss man dazu diese Zeichen nachspielen.</p><p>Oder ist das die Kiste die der Waldkönig vermisst? Doch zum Öffnen bräuchtet ihr sowieso erstmal einen Feuerzauber, um das Schloss zu enteisen.</p><p><em>Zum Öffnen muss Z den Feuerzauber beherrschen und ihn auf einer Muschelharfe korrekt vorspielen.</em></p>",
       "links": [
-        {
-          "label": "#52 Mit der offenen Kiste",
-          "to": 52
-        },
-        {
-          "label": "#37 Mit der Kiste zurück zum Waldkönig",
-          "to": 37
-        },
+        { "label": "#52 Mit der offenen Kiste", "to": 52 },
+        { "label": "#37 Mit der Kiste zurück zum Waldkönig", "to": 37 },
         {
           "label": "#53 Mit der verschlossenen Kiste weiter nach Klaster",
           "to": 53
         },
-        {
-          "label": "#31 Erstmal den Feuerzauber lernen",
-          "to": 31
-        },
-        {
-          "label": "#17 Nochmal Silberfäden verdienen",
-          "to": 17
-        },
+        { "label": "#31 Erstmal den Feuerzauber lernen", "to": 31 },
+        { "label": "#17 Nochmal Silberfäden verdienen", "to": 17 },
         {
           "label": "#41 Dem Wellenfischer helfen (falls noch nicht geschehen)",
           "to": 41
@@ -1150,35 +799,20 @@
     "id": 52,
     "title": "Offen",
     "ambient": "amb-forest",
-    "npcs": [
-      "gnom",
-      "mellots"
-    ],
+    "npcs": ["gnom", "mellots"],
     "story": {
       "text": "<p>Mit einem Knirschen öffnet sich das Schloss und ihr könnt den Deckel der Kiste anheben. Unzählige Silberfäden schwirren darin umher. Das dürfte euch in der Stadt der Magier sicherlich noch einmal von Nutzen sein. Und jetzt, nichts wie raus aus dem Wald!</p>",
-      "links": [
-        {
-          "label": "#53 Ab nach Klaster",
-          "to": 53
-        }
-      ]
+      "links": [{ "label": "#53 Ab nach Klaster", "to": 53 }]
     }
   },
   {
     "id": 53,
     "title": "Finale",
     "ambient": "amb-field",
-    "npcs": [
-      "gnom"
-    ],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Nach einem kurzen Weg schon lasst ihr die letzten Bäume hinter euch und blickt über ein weites Kornfeld hinweg. Der frische Wind weht euch um die Nase und es duftet herrlich nach Gras und feuchter Erde. Die Grillen zirpen und die Schwalben schimpfen. Nach all der bedrückenden Enge zwischen den dunklen Bäumen fühlt sich das hier jetzt alles nach Freiheit an.</p><p>„Klaster!“, seufzt Tromikon verzückt und deutet auf die Mauern einer Stadt am Horizont. Während ihr die noch fernen Dächer hinter den Mauern betrachtet und euch vorstellt, was man in dieser Stadt wohl so alles erleben mag, redet euer winziger Freund aufgeregt weiter. „Die Stadt des berühmtesten Zauberordens“, piepst er. „Mit der größten Zauberakademie weit und breit. Wenn man die Magie der Musik erlernen wollt, dann ist es hier! Und jetzt ist es geschafft! Ich werde der berühmteste Zauberer von Ionoï!“ (Link = ./assets/audio/character/laugh-evil-thunder.mp3)</p><p>Etwas über sich selbst erschrocken blickt euch das winzige an und räuspert sich verlegen. „Ähm, ich meine natürlich: wir. Wir werden die berühmtesten Magier.“</p><p>Ihr nickt gedankenverloren. Jetzt gilt es schließlich erst einmal die Aufnahmeprüfung zu bestehen. Doch das ist eine andere Geschichte.</p>",
-      "links": [
-        {
-          "label": "#54 Abspann",
-          "to": 54
-        }
-      ]
+      "links": [{ "label": "#54 Abspann", "to": 54 }]
     }
   },
   {
@@ -1188,12 +822,7 @@
     "npcs": [],
     "story": {
       "text": null,
-      "links": [
-        {
-          "label": "#0 Zum Anfang",
-          "to": 0
-        }
-      ]
+      "links": [{ "label": "#0 Zum Anfang", "to": 0 }]
     }
   }
 ]
