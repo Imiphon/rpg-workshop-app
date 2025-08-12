@@ -58,8 +58,8 @@ export async function renderTilesForChapter(ch) {
   // Playback (interrupts ambient)
   els.playbackButtons.innerHTML = "";
   [
-    { label: "Playback A", src: "./assets/audio/sp-effects/playback-a.mp3" },
-    { label: "Playback B", src: "./assets/audio/sp-effects/playback-b.mp3" },
+    { label: "Playback A", src: "./assets/audio/playbacks/melopoiia-trailer140404.mp3" },
+    { label: "Playback B", src: "./assets/audio/playbacks/playback1.mp3" },
   ].forEach((def) => {
     const b = document.createElement("button");
     b.className = "btn";
