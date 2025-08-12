@@ -5,6 +5,20 @@
 
 export default class AudioEngine {
   constructor() {
+    // --- iOS unlock & WebAudio shims (minimal addition) ---
+this._isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+this._iosUnlocked = false;
+this._iosCtx = null;
+this._iosAmbGain = null;
+this._iosFxGain = null;
+this._iosKindMap = new WeakMap();  // HTMLMediaElement -> 'amb' | 'fx'
+this._iosPending = new Set();      // elements waiting for unlock/connect
+
+if (this._isIOS) {
+  this._installIOSUnlock();  // set up user-gesture listeners
+}
     // --- Web Audio plumbing (iOS-friendly) ---
     this.audioCtx = null; // created on first user interaction
     this.masterGain = null; // master gain (mute control)
@@ -58,6 +72,7 @@ export default class AudioEngine {
         a.volume = this._liveFxVol();
       } catch (_) {}
     });
+    if (this._isIOS) this._applyIOSGains();
   }
 
   toggleMuted() {
@@ -72,6 +87,11 @@ export default class AudioEngine {
     a.loop = loop;
     a.volume = volume;
     a.muted = this.muted; // iOS/Safari: respect master mute
+
+    if (this._isIOS) {
+  // Use loop flag to decide bus: loop=true -> 'amb', loop=false -> 'fx'
+  this._registerAudioForIOS(a, loop ? 'amb' : 'fx');
+}
     return a;
   }
 
@@ -165,6 +185,7 @@ export default class AudioEngine {
     if (this.currentPlayback) setMutedFlag(this.currentPlayback);
     if (this.effectPool && this.effectPool.length) {
       this.effectPool.forEach(setMutedFlag);
+      if (this._isIOS) this._applyIOSGains();
     }
 
     // Keep existing volume logic so fades/restore-after-unmute still work everywhere
@@ -280,4 +301,102 @@ _installUnlockHandlers() {
   window.addEventListener('click', unlock, true);
   window.addEventListener('keydown', unlock, true);
 }
+
+_installIOSUnlock() {
+  const unlock = async () => {
+    try {
+      this._ensureIOSCtx();
+      if (this._iosCtx && this._iosCtx.state === 'suspended') {
+        await this._iosCtx.resume();
+      }
+      // tiny silent buffer to satisfy iOS
+      const buf = this._iosCtx.createBuffer(1, 1, 22050);
+      const src = this._iosCtx.createBufferSource();
+      src.buffer = buf;
+      src.connect(this._iosAmbGain);
+      src.start(0);
+
+      this._iosUnlocked = true;
+
+      // Connect all pending elements now and flip their output to WebAudio
+      this._iosPending.forEach((el) => {
+        this._connectIOSNow(el, this._iosKindMap.get(el) || 'fx');
+      });
+      this._iosPending.clear();
+
+      // apply current volumes to gains
+      this._applyIOSGains();
+    } catch (_) {
+      // ignore
+    }
+    window.removeEventListener('pointerdown', unlock, true);
+    window.removeEventListener('touchstart', unlock, true);
+    window.removeEventListener('click', unlock, true);
+    window.removeEventListener('keydown', unlock, true);
+  };
+
+  window.addEventListener('pointerdown', unlock, true);
+  window.addEventListener('touchstart', unlock, true);
+  window.addEventListener('click', unlock, true);
+  window.addEventListener('keydown', unlock, true);
+}
+
+_ensureIOSCtx() {
+  if (this._iosCtx) return;
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return;
+
+  this._iosCtx = new Ctx();
+  // two simple buses: ambient and fx
+  this._iosAmbGain = this._iosCtx.createGain();
+  this._iosFxGain  = this._iosCtx.createGain();
+
+  // initialize with current volumes (respect mute)
+  this._iosAmbGain.gain.value = this.muted ? 0 : (this.ambVol ?? 1);
+  this._iosFxGain.gain.value  = this.muted ? 0 : (this.fxVol  ?? 1);
+
+  // mix to destination
+  this._iosAmbGain.connect(this._iosCtx.destination);
+  this._iosFxGain.connect(this._iosCtx.destination);
+}
+
+_registerAudioForIOS(mediaEl, kind /* 'amb' | 'fx' */) {
+  // Before unlock: keep HTML audio audible, remember to connect later
+  this._iosKindMap.set(mediaEl, kind);
+  if (this._iosUnlocked) {
+    this._connectIOSNow(mediaEl, kind);
+  } else {
+    this._iosPending.add(mediaEl);
+  }
+}
+
+_connectIOSNow(mediaEl, kind) {
+  this._ensureIOSCtx();
+  if (!this._iosCtx) return;
+
+  // If already connected, skip (idempotent)
+  if (mediaEl._iosConnected) return;
+
+  // Route element -> proper gain
+  const srcNode = this._iosCtx.createMediaElementSource(mediaEl);
+  const bus = (kind === 'amb') ? this._iosAmbGain : this._iosFxGain;
+  srcNode.connect(bus);
+
+  // Now that WebAudio path is live, mute the HTML element output
+  mediaEl.muted = this.muted || true; // keep master mute respected
+
+  mediaEl._iosConnected = true;
+}
+
+_applyIOSGains() {
+  if (!this._iosCtx) return;
+  const amb = (typeof this.ambVol === 'number') ? this.ambVol : 1;
+  const fx  = (typeof this.fxVol  === 'number') ? this.fxVol  : 1;
+
+  const master = this.muted ? 0 : 1;
+  if (this._iosAmbGain) this._iosAmbGain.gain.value = master ? amb : 0;
+  if (this._iosFxGain)  this._iosFxGain.gain.value  = master ? fx  : 0;
+}
+
+
 }
