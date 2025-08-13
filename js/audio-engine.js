@@ -5,6 +5,10 @@
 
 export default class AudioEngine {
   constructor() {
+    // iOS detection (also catches iPadOS-on-Mac with touch)
+    this._isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
     // --- Web Audio plumbing (iOS-friendly) ---
     this.audioCtx = null; // created on first user interaction
     this.masterGain = null; // master gain (mute control)
@@ -49,7 +53,9 @@ export default class AudioEngine {
     // Update stored prefs
     if (ambVol != null) this.ambVol = +ambVol;
     if (fxVol != null) this.fxVol = +fxVol;
-
+    // On iOS (or when the WebAudio graph exists), reflect the change on the gain nodes
+    if (this.ambGain) this.ambGain.gain.value = this._liveAmbVol();
+    if (this.fxGain) this.fxGain.gain.value = this._liveFxVol();
     // Apply live volumes considering mute
     if (this.currentAmbient)
       this.currentAmbient.audio.volume = this._liveAmbVol();
@@ -68,6 +74,11 @@ export default class AudioEngine {
   // Helper to start an HTMLAudio with options
   _createAudio(src, loop = false, volume = 1.0) {
     const a = new Audio(src);
+    // iOS: route element to the proper bus so gains can control volume
+    if (this._isIOS) {
+      // loop === true means "ambient"; false means "fx" (keeps your semantics)
+      this._iosWire(a, loop ? "amb" : "fx");
+    }
     a.preload = "auto";
     a.loop = loop;
     a.volume = volume;
@@ -159,7 +170,9 @@ export default class AudioEngine {
         el.muted = this.muted;
       } catch (_) {}
     };
-
+    if (this.masterGain) this.masterGain.gain.value = this.muted ? 0 : 1;
+    if (this.ambGain) this.ambGain.gain.value = this._liveAmbVol();
+    if (this.fxGain) this.fxGain.gain.value = this._liveFxVol();
     if (this.currentAmbient) setMutedFlag(this.currentAmbient.audio);
     if (this.prevAmbient) setMutedFlag(this.prevAmbient.audio);
     if (this.currentPlayback) setMutedFlag(this.currentPlayback);
@@ -213,71 +226,87 @@ export default class AudioEngine {
   }
 
   _ensureAudioGraph() {
-  const Ctx = window.AudioContext || window.webkitAudioContext;
-  if (!Ctx) return; // fallback: keep HTMLAudioElement volumes
-  if (this.audioCtx) return;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return; // fallback: keep HTMLAudioElement volumes
+    if (this.audioCtx) return;
 
-  this.audioCtx = new Ctx();
+    this.audioCtx = new Ctx();
 
-  // Create buses: master -> destination
-  this.masterGain = this.audioCtx.createGain();
-  this.masterGain.gain.value = this.muted ? 0 : 1;
-  this.masterGain.connect(this.audioCtx.destination);
+    // Create buses: master -> destination
+    this.masterGain = this.audioCtx.createGain();
+    this.masterGain.gain.value = this.muted ? 0 : 1;
+    this.masterGain.connect(this.audioCtx.destination);
 
-  // Ambient and FX sub-buses -> master
-  this.ambGain = this.audioCtx.createGain();
-  this.fxGain = this.audioCtx.createGain();
-  this.ambGain.gain.value = this._liveAmbVol();
-  this.fxGain.gain.value = this._liveFxVol();
-  this.ambGain.connect(this.masterGain);
-  this.fxGain.connect(this.masterGain);
-}
+    // Ambient and FX sub-buses -> master
+    this.ambGain = this.audioCtx.createGain();
+    this.fxGain = this.audioCtx.createGain();
+    this.ambGain.gain.value = this._liveAmbVol();
+    this.fxGain.gain.value = this._liveFxVol();
+    this.ambGain.connect(this.masterGain);
+    this.fxGain.connect(this.masterGain);
+  }
 
-// Connect a media element to the right bus exactly once
-_connectToBus(mediaEl, kind /* 'amb' | 'fx' */) {
-  if (!this.audioCtx) return;                // no Web Audio -> skip
-  if (this._nodeMap.has(mediaEl)) return;    // already connected
+  // Connect a media element to the right bus exactly once
+  _connectToBus(mediaEl, kind /* 'amb' | 'fx' */) {
+    if (!this.audioCtx) return; // no Web Audio -> skip
+    if (this._nodeMap.has(mediaEl)) return; // already connected
 
-  const src = this.audioCtx.createMediaElementSource(mediaEl);
-  this._nodeMap.set(mediaEl, src);
+    const src = this.audioCtx.createMediaElementSource(mediaEl);
+    this._nodeMap.set(mediaEl, src);
 
-  // Route to the requested bus
-  (kind === 'fx' ? this.fxGain : this.ambGain).connect(this.masterGain);
-  src.connect(kind === 'fx' ? this.fxGain : this.ambGain);
+    // Route to the requested bus
+    (kind === "fx" ? this.fxGain : this.ambGain).connect(this.masterGain);
+    src.connect(kind === "fx" ? this.fxGain : this.ambGain);
 
-  // Avoid double output (only hear the WebAudio path)
-  // On iOS this is safe once the context is unlocked.
-  // mediaEl.muted = true;
-}
+    // Avoid double output (only hear the WebAudio path)
+    // On iOS this is safe once the context is unlocked.
+    // mediaEl.muted = true;
+  }
 
-// Unlock/resume context on first user gesture
-_installUnlockHandlers() {
-  const unlock = async () => {
+  // Wire a media element into the WebAudio graph on iOS so we can control volume via gains
+  _iosWire(mediaEl, kind /* 'amb' | 'fx' */) {
+    // Ensure the audio graph exists
+    this._ensureAudioGraph();
+
+    // Reuse your existing bus-connection logic (keeps the node in _nodeMap)
+    this._connectToBus(mediaEl, kind);
+
+    // From now on, we only want to hear the WebAudio path (avoid double output)
     try {
-      this._ensureAudioGraph();
-      if (this.audioCtx && this.audioCtx.state === 'suspended') {
-        await this.audioCtx.resume();
-      }
-      // Play a tiny empty buffer to satisfy iOS' gesture requirement
-      if (this.audioCtx && !this._unlocked) {
-        const buf = this.audioCtx.createBuffer(1, 1, 22050);
-        const src = this.audioCtx.createBufferSource();
-        src.buffer = buf;
-        src.connect(this.masterGain);
-        src.start(0);
-      }
-      this._unlocked = true;
-    } catch (_) { /* no-op */ }
-    // Remove listeners after first unlock
-    window.removeEventListener('pointerdown', unlock, true);
-    window.removeEventListener('touchstart', unlock, true);
-    window.removeEventListener('click', unlock, true);
-    window.removeEventListener('keydown', unlock, true);
-  };
+      mediaEl.muted = true;
+    } catch (_) {}
+  }
 
-  window.addEventListener('pointerdown', unlock, true);
-  window.addEventListener('touchstart', unlock, true);
-  window.addEventListener('click', unlock, true);
-  window.addEventListener('keydown', unlock, true);
-}
+  // Unlock/resume context on first user gesture
+  _installUnlockHandlers() {
+    const unlock = async () => {
+      try {
+        this._ensureAudioGraph();
+        if (this.audioCtx && this.audioCtx.state === "suspended") {
+          await this.audioCtx.resume();
+        }
+        // Play a tiny empty buffer to satisfy iOS' gesture requirement
+        if (this.audioCtx && !this._unlocked) {
+          const buf = this.audioCtx.createBuffer(1, 1, 22050);
+          const src = this.audioCtx.createBufferSource();
+          src.buffer = buf;
+          src.connect(this.masterGain);
+          src.start(0);
+        }
+        this._unlocked = true;
+      } catch (_) {
+        /* no-op */
+      }
+      // Remove listeners after first unlock
+      window.removeEventListener("pointerdown", unlock, true);
+      window.removeEventListener("touchstart", unlock, true);
+      window.removeEventListener("click", unlock, true);
+      window.removeEventListener("keydown", unlock, true);
+    };
+
+    window.addEventListener("pointerdown", unlock, true);
+    window.addEventListener("touchstart", unlock, true);
+    window.addEventListener("click", unlock, true);
+    window.addEventListener("keydown", unlock, true);
+  }
 }

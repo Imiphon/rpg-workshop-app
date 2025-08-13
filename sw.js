@@ -1,6 +1,7 @@
-// sw.js – robust update + network-first for app shell
+// Service Worker to 
+//sw.js – robust update + network-first for app shell
 
-const SW_VERSION = "2025-08-12-02"; // bump on every deploy
+const SW_VERSION = "2025-08-13-03"; // bump on every deploy
 const CACHE_STATIC = `melopoiia-static-${SW_VERSION}`;
 const CACHE_DYNAMIC = `melopoiia-dynamic-${SW_VERSION}`;
 
@@ -11,16 +12,16 @@ const CORE = [
   "./chapters.json",
 
   // JS modules
-  "./js/main.js",
-  "./js/state.js",
-  "./js/engine.js",
   "./js/audio-engine.js",
   "./js/dom.js",
-  "./js/navigation.js",
-  "./js/tiles.js",
-  "./js/story.js",
-  "./js/solfege.js",
+  "./js/engine.js",
+  "./js/main.js",
   "./js/manifest.js",
+  "./js/navigation.js",
+  "./js/solfege.js",
+  "./js/state.js",
+  "./js/story.js",
+  "./js/tiles.js",
 ];
 
 // Helper: detect app shell files (html/js/json/css)
@@ -71,8 +72,20 @@ self.addEventListener("activate", (evt) => {
 self.addEventListener("fetch", (evt) => {
   const req = evt.request;
   if (req.method !== "GET") return;
-
   const url = new URL(req.url);
+
+    // 1) Bypass Live-Server WebSocket
+  if (url.pathname === '/ws' || req.headers.get('upgrade') === 'websocket') {
+    return; //  network handles it
+  }
+
+  if (
+    req.destination === 'audio' ||
+    url.pathname.startsWith('/assets/audio/') ||
+    /\.(mp3|m4a|ogg|wav)$/i.test(url.pathname)
+  ) {
+    return; // direkly to web, no respondWith
+  }
 
   // Cache-bust nur optisch: ignoriert ?v=… beim Cache-Key
   const cacheKey = url.origin + url.pathname;
@@ -102,7 +115,7 @@ async function cacheFirst(cacheKey, req) {
   const cached = await dyn.match(cacheKey) || await caches.match(req);
   if (cached) return cached;
   const res = await fetch(req);
-  dyn.put(cacheKey, res.clone());
+  if (res && res.ok) dyn.put(cacheKey, res.clone());
   return res;
 }
 
