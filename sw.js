@@ -1,7 +1,7 @@
 // Service Worker to 
 //sw.js – robust update + network-first for app shell
 
-const SW_VERSION = "2025-08-13-03"; // bump on every deploy
+const SW_VERSION = "2025-08-13-04"; // bump on every deploy
 const CACHE_STATIC = `melopoiia-static-${SW_VERSION}`;
 const CACHE_DYNAMIC = `melopoiia-dynamic-${SW_VERSION}`;
 
@@ -13,6 +13,7 @@ const CORE = [
 
   // JS modules
   "./js/audio-engine.js",
+  "./js/chapters-editor.js",
   "./js/dom.js",
   "./js/engine.js",
   "./js/main.js",

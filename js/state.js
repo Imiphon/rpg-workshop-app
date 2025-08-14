@@ -1,7 +1,7 @@
 // Shared state & constants (ES module)
 // All comments in English
 
-export const CHAPTER_VERSION = "2025-08-13-03"; // bump when chapters.json changes
+export const CHAPTER_VERSION = "2025-08-13-04"; // bump when chapters.json changes
 
 export const STATE = {
   chapters: [],

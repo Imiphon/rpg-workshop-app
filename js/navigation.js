@@ -60,7 +60,7 @@ export function goTo(id) {
   wireInlineSounds(els.chapterContent);
 
   // Chapter-specific UI: solfege buttons in chapter 8
-  if (ch.id === 8) {
+  if ((ch.id === 8)||(ch.id === 40)) {
     renderSolfegeButtons(els.chapterContent);
   }
 

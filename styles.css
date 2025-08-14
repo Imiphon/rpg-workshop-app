@@ -257,3 +257,132 @@ tile}
     grid-template-columns: repeat(2, 1fr)
   }
 }
+
+/* Chapters Editor – scoped styles (works if the editor is in the light DOM)
+   Note: These rules won't penetrate a Shadow DOM. */
+/* Chapters Editor overlay container (visible in light DOM) */
+#chapters-editor {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0,0,0,.6);
+  display: none; /* shown via JS */
+}
+
+#chapters-editor .wrap {
+  font-family: system-ui, sans-serif;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 12px;
+  padding: 12px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#chapters-editor .card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.15);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chapters-editor .toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+#chapters-editor .toolbar input[type="search"] {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#chapters-editor .list {
+  height: 76vh;
+  overflow: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#chapters-editor .row {
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+}
+
+#chapters-editor .row:hover { background: #f9f9ff; }
+#chapters-editor .row.active { background: #eef3ff; font-weight: 600; }
+
+#chapters-editor .btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+#chapters-editor .btn.primary { background: #1a73e8; border-color: #1a73e8; color: #fff; }
+#chapters-editor .btn.danger  { background: #e53935; border-color: #e53935; color: #fff; }
+#chapters-editor .btn.ghost   { background: transparent; }
+
+#chapters-editor .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#chapters-editor .field { display: grid; gap: 6px; margin-bottom: 10px; }
+#chapters-editor .field label { font-size: 12px; color: #666; }
+
+#chapters-editor .field input,
+#chapters-editor .field textarea,
+#chapters-editor .field select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#chapters-editor .links { display: grid; gap: 6px; }
+
+#chapters-editor .link-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 36px;
+  gap: 6px;
+  align-items: center;
+}
+
+#chapters-editor .tags { font-size: 12px; color: #888; }
+
+#chapters-editor .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+#chapters-editor .errors { color: #b00020; font-size: 12px; white-space: pre-wrap; }
+
+#chapters-editor .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#chapters-editor .dim { color: #777; font-size: 12px; }
