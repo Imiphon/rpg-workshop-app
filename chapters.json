@@ -830,7 +830,7 @@
     "ambient": "amb-forest",
     "npcs": ["gnom"],
     "story": {
-      "text": "<p>Die winzigen Knopfaugen des Gnoms leuchten vor Freude hell auf. „Ihr wollt mir tatsächlich helfen?“, piepst er vergnügt. „Oh, vielen Dank! Also gut, dann passt mal auf. Ihr sucht euch am besten erst einmal nur Wellenfische von einer Sorte heraus und fangt nur diese ein. Aber wirklich nur die eine Sorte, ansonsten kann es leicht passieren, dass sie sich gegenseitig wieder verjagen oder gar auffressen.“</p><p><em>Jeder soll sich einen (anderen!) Ton aussuchen und diesen wiedererkennen, sobald man ihn hört. Je nach Level alle Töne immer wieder durcheinanderspielen.</em></p>",
+      "text": "<p>Die winzigen Knopfaugen des Gnoms leuchten vor Freude hell auf. „Ihr wollt mir tatsächlich helfen?“, piepst er vergnügt. „Oh, vielen Dank! Also gut, dann passt mal auf. Ihr sucht euch am besten erst einmal nur Wellenfische von einer Sorte heraus und fangt nur diese ein. Aber wirklich nur die eine Sorte, ansonsten kann es leicht passieren, dass sie sich gegenseitig wieder verjagen oder gar auffressen.“</p><p><em>Jeder soll sich einen (anderen!) Ton aussuchen und diesen wiedererkennen, sobald man ihn hört. Je nach Level alle Töne immer wieder durcheinanderspielen.</em></p><p>c-ref(Link = ./assets/audio/tuning-quest/c-ref.mp3)c-low(Link = ./assets/audio/tuning-quest/c-low.mp3)c-sharp(Link = ./assets/audio/tuning-quest/c-sharp.mp3)c-correct(Link = ./assets/audio/tuning-quest/c-correct.mp3)</p><p>e-ref(Link = ./assets/audio/tuning-quest/e-ref.mp3)e-low(Link = ./assets/audio/tuning-quest/e-low.mp3)e-sharp(Link = ./assets/audio/tuning-quest/e-sharp.mp3)e-correct(Link = ./assets/audio/tuning-quest/e-correct.mp3)</p><p>f-ref(Link = ./assets/audio/tuning-quest/f-ref.mp3)f-low(Link = ./assets/audio/tuning-quest/f-low.mp3)f-sharp(Link = ./assets/audio/tuning-quest/f-sharp.mp3)f-correct(Link = ./assets/audio/tuning-quest/f-correct.mp3)</em></p>",
       "links": [
         {
           "label": "#401 Alle Wellen gefischt!",
@@ -841,7 +841,7 @@
   },
   {
     "id": 401,
-    "title": "Wellen fischen",
+    "title": "Wellen gefischt",
     "ambient": "amb-forest",
     "npcs": ["gnom"],
     "story": {
