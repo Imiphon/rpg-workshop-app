@@ -8,7 +8,8 @@ let NPC_MANIFEST = null;
 export async function loadNpcManifest() {
   if (NPC_MANIFEST) return NPC_MANIFEST;
   try {
-    const res = await fetch(`${NPC_MANIFEST_URL}?v=${encodeURIComponent(CHAPTER_VERSION)}`, { cache: "no-cache" });
+    // const res = await fetch(`${NPC_MANIFEST_URL}?v=${encodeURIComponent(CHAPTER_VERSION)}`, { cache: "no-cache" });
+    const res = await fetch(`${NPC_MANIFEST_URL}`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const ct = res.headers.get("content-type") || "";
     if (!ct.includes("application/json")) throw new Error(`Unexpected content-type: ${ct}`);

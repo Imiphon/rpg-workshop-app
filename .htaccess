@@ -1,0 +1,22 @@
+# Aktivieren
+RewriteEngine On
+
+# Vorhandene Dateien/Ordner NIE umschreiben
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Ausnahmen für statische Assets (json, js, css, mp3, wav, ogg, m4a, png, jpg, svg, webp)
+RewriteCond %{REQUEST_URI} \.(json|js|css|mp3|m4a|ogg|wav|png|jpg|jpeg|svg|webp)$ [NC]
+RewriteRule ^ - [L]
+
+# 3) (Optional, aber hilfreich) korrekter MIME-Type für JSON
+AddType application/json .json
+
+# 4) (Nur falls der Server JSON generell restriktiv behandelt)
+<FilesMatch "\.json$">
+  Require all granted
+</FilesMatch>
+
+# Alles andere auf index.html (SPA)
+RewriteRule ^ index.html [L]

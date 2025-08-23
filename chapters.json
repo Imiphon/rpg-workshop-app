@@ -1,18 +1,18 @@
 [
   {
-    "id": 0,
-    "title": "Story Übersicht und Aufgaben",
-    "ambient": "amb-fire",
-    "npcs": [],
-    "story": {
-      "text": "<p>Hinweis:</p><p><em>Namen werden während des Abenteuers bestimmt. Anweisungen erscheinen in kursiv.</p>\n<p>Zunächst die Charakterbögen verteilen. Und herausfinden wie gut der/die Spieler/Spielerin ein Instrument beherrscht.</p>\n<p>Dann geht's los.</em></p>",
-      "links": [
-        {
-          "label": "#01 Los geht's",
-          "to": 1
-        }
-      ]
-    }
+  "id": 0,
+  "title": "Story Übersicht und Aufgaben",
+  "ambient": "amb-fire",
+  "npcs": [],
+  "story": {
+    "text": "<p>Namen werden während des Abenteuers bestimmt.</p><p><em>Anweisungen erscheinen in kursiv.</em></p><p>Charakterbögen und Illustrationen werden in Papierform bereitgestellt.</p><p><strong>Aufgaben für Spieler klären:</strong><br>Klären ob Spieler ein oder mehrere Instrumente spielen oder nur singen und klatschen.<br>„Zauber“ für Gruppe vorbereiten → Alter/mus. Fähigkeiten müssen angepasst werden. → Evtl. immer mit den Kindern zusammen einen Zauber ausdenken (z.B. „wie klingt wohl der Puls eines Wellenschrats? Wie könnte man einen Klasterklopfer verscheuchen? Wie klingt ein Feuerzauber?“ etc.)</p><p>Folgende „Zauber“-AUFGABEN im Spiel werden erlernt und dann angewendet/geprüft:</p><ul><li><strong>Name aus Tönen/Rhythmen</strong> (KEINE EIGENE AUFGABE NÖTIG)<br>(einen Namen für den eigenen Charakter finden, <a href=\"#08\">ID 08</a> / <a href=\"#09\">ID 09</a>)</li><br><li><strong>AUFGABE Bannzauber gegen den Wellenschrat</strong><br>(Vorschlag: Puls klopfen oder Bannzauber erfinden, <a href=\"#17\">ID 17</a>)</li><br><li><strong>AUFGABE Wirrwarrzauber</strong><br>(Vorschlag: Einen Zauber aus „Ta-Ke-Ti-Na-Silben“ oder wirre Melodie lernen → was klingt wirr?, <a href=\"#22\">ID 22</a>)</li><br><li><strong>AUFGABE Scheuchzauber</strong><br>(Vorschlag: Einen Klasterklopfer verscheuchen, <a href=\"#26\">ID 26</a>)</li>\n<li><strong>AUFGABE Schutzzauber gegen Eichhörnchen</strong><br>(Vorschlag: Wellenschrat bietet ihn zusätzlich an, <a href=\"#27\">ID 27</a>)</li>\n<li><strong>AUFGABE Blumenzauber (Kletterblume)</strong><br>(Vorschlag: aufsteigender Rhythmus oder Melodie → zum Nüsse pflücken oder Klettern, <a href=\"#33\">ID 33</a>)</li>\n<li><strong>AUFGABE Feuerzauber</strong><br>(Vorschlag: heißer Sound, Melodie → zum Enteisen oder Käfer grillen, <a href=\"#35\">ID 35</a>)</li>\n<li><strong>Muschelharfe stimmen</strong> (KEINE EIGENE AUFGABE NÖTIG)<br>(Vorschlag: Audios aus Kapitel oder echtes Instrument → Origon in der Gnomstadt: Stimmen eines Instruments, <a href=\"#43\">ID 43</a>)</li>\n<li><strong>AUFGABE besserer Wirrwarrzauber </strong><br>(Vorschlag: Wirrwarrzauber schneller, doppelt oder neu → erlaubt auch Mellots und Menschen zu verwirren, <a href=\"#34\">ID 34</a>)</li>\n<li><strong>AUFGABE Schatztruhe öffnen</strong><br>(Vorschlag: Noten/Rhythmus lesen lernen, <a href=\"#51\">ID 51</a>))</li></ul>",
+    "links": [
+      {
+        "label": "#01 Los geht's",
+        "to": 1
+      }
+    ]
+  }
   },
   {
     "id": 1,
@@ -89,7 +89,7 @@
     "ambient": "amb-forest",
      "npcs": ["gnom"],
     "story": {
-      "text": "Auf Ionoï glaubt man, dass jeder Seele ein eigener Grundton innewohnt. Man nennt ihn den SEELENTON. Kennt man diesen Seelenton, so kann man sich selbst oder alles andere besser verzaubern. Außerdem lässt sich auch feststellen, ob man „miteinander harmoniert“. An der Akademie von Klaster lernt man, wie man den Seelenton finden kann und wie man ihn benennt. Dazu muss man sich eigentlich nur ordentlich entspannen und dann seinen liebsten und leichtesten Ton singen. Immer und immer wieder. So o häufig und regelmäßig (und dabei natürlich immer prüfen, ob es noch der selbe ist!), bis man ihn zielsicher trifft.",
+      "text": "Auf Ionoï glaubt man, dass jeder Seele ein eigener Grundton innewohnt. Man nennt ihn den SEELENTON. Kennt man diesen Seelenton, so kann man sich selbst oder alles andere besser verzaubern. Außerdem lässt sich auch feststellen, ob man „miteinander harmoniert“. An der Akademie von Klaster lernt man, wie man den Seelenton finden kann und wie man ihn benennt. Dazu muss man sich eigentlich nur ordentlich entspannen und dann seinen liebsten und leichtesten Ton singen. Immer und immer wieder. So oft und regelmäßig, bis man ihn zielsicher trifft (und dabei natürlich immer prüfen, ob es noch der selbe ist!).",
       "links": [
         {
           "label": "#02 Was war noch gleich ein Gnom?",
@@ -195,6 +195,21 @@
     }
   },
   {
+    "id": 10,
+    "title": "Schnell weiter",
+    "ambient": "amb-forest",
+    "npcs": ["groschums"],
+    "story": {
+      "text": "<p>So, das müsste doch reichen, um dem Kobold noch einen Zauber abzukaufen. Schnell ihr rennt ihr zurück in Richtung des großen Flusses Oktav. Vor euch taucht der große runde Felsen auf. Ihr wisst schon was das bedeutet.</p>",
+      "links": [
+        {
+          "label": "#23 Die Groschums",
+          "to": 23
+        }
+       ]
+     }
+    },
+    {
     "id": 9,
     "title": "Name aus Rhythmen",
     "ambient": "amb-forest",
@@ -333,7 +348,7 @@
       "text": "<p>„Der Wellenschrat ist eine lebendige Welle, die man auch manchmal hören kann. Meistens sitzen diese Geister aber in lebendigem Holz und geben keinen Ton von sich. Also keinen hörbaren. Am liebsten leben sie in Bäumen. In dem von einem Wellenschrat beschwingten Baum, können sich dann sogar Astlöcher bilden, die wie Augen und Mund aussehen. Das macht der Wellenschrat aber nur, um freundlicher auszusehen.</p><p>Seinen Abwehrzauber gegen meine Axt kann m an hören, wenn man gut lauscht.</p><p><em>Die Spieler sollen noch einmal genau horchen.</em> (Link = ./assets/audio/characters/tree-ghost/puls.mp3</p><p>Manchmal beginnen sie auch ganz unheimlich zu rufen). Ja, ein Wellenschrat kann sogar sprechen. Aber Angst muss man eigentlich keine haben, sie schwingen ja immer nur in Bäumen. Und SIE KÖNNEN JEDERZEIT EINEN ANDEREN BAUM WÄHLEN!“, beschimpft er den Baum und schlägt noch einmal mit der Axt ordentlich zu. (Link = ./assets/audio/characters/woodshopper/axt.mp3)</p>",
       "links": [
         {
-          "label": "#16 Was ist denn ein Silberfaden?",
+          "label": "#15 Was ist denn ein Silberfaden?",
           "to": 15
         },
         {
@@ -364,8 +379,8 @@
           "to": 21
         },
         {
-          "label": "#34 Wenn man von einem Eichhörnchen verzaubert wurde, geht es hier lang.",
-          "to": 34
+          "label": "#10 Wenn man von einem Eichhörnchen verzaubert wurde, geht es hier lang.",
+          "to": 10
         },
         {
           "label": "#31 Wenn manzurück zur Weggabelung am Fluss möchte.",
@@ -399,7 +414,7 @@
     "ambient": "amb-forest",
     "npcs": ["gnom", "goblin", "groschums"],
     "story": {
-      "text": "<p>Der Pfad windet sich eine Weile kreuz und quer durch den Wald, bis ihr schließlich vor dem großen runden Felsen steht. Da erschallt neben euch plötzlich ein fieses Kichern. (Link = ./assets/audio/characters/goblin/laugh-long.mp3)</p><p>Ein grüner Kobold steht dort unter einem Baum, und begrüßt euch mit breitem Grinsen.</p><p>„Also an eurer Stelle würde ich da jetzt nicht einfach so weitermarschieren. Hinter dem Felsen lauern nämlich ein paar Groschums. Ihr weißt nicht, was ein Groschum ist!?“ Der Kobold kichert erneut (Link = ./assets/audio/characters/goblin/laugh-evil.mp3).</p><p>„Nun, dann nehmt euch in Acht! Diese grausigen Raubtiere machen mit euch kurzen Prozess. Ihr könntet natürlich einen Wirrwarrzauber wirken. Mit so etwas kommt ihr vermutlich heil an diesen Untieren vorbei. Wenn ihr noch keine passende Zauberformel habt, kann ich euch auch gerne eine beibringen (Link = ./assets/audio/characters/goblin/laugh-evil2.mp3). … Allerdings bräuchte ich eine gewisse Entschädigung für meine Mühen. Sagen wir einen Silberfaden? Den Weg hinauf, könnt ihr euch immer einen beim Holzfäller verdienen, falls ihr keinen besitzt. Was haltet ihr davon?“</p>",
+      "text": "<p>Der Pfad windet sich eine Weile kreuz und quer durch den Wald, bis ihr schließlich vor dem großen runden Felsen steht. Da erschallt neben euch plötzlich ein fieses Kichern. (Link = ./assets/audio/characters/goblin/laugh-long.mp3)</p><p>Ein grüner Kobold steht dort unter einem Baum, und begrüßt euch mit breitem Grinsen.</p><p>„Also an eurer Stelle würde ich da jetzt nicht einfach so weitermarschieren. Hinter dem Felsen lauern nämlich ein paar Groschums. Ihr wisst nicht, was ein Groschum ist!?“ Der Kobold kichert erneut (Link = ./assets/audio/characters/goblin/laugh-evil.mp3).</p><p>„Nun, dann nehmt euch in Acht! Diese grausigen Raubtiere machen mit euch kurzen Prozess. Ihr könntet natürlich einen Wirrwarrzauber wirken. Mit so etwas kommt ihr vermutlich heil an diesen Untieren vorbei. Wenn ihr noch keine passende Zauberformel habt, kann ich euch auch gerne eine beibringen (Link = ./assets/audio/characters/goblin/laugh-evil2.mp3). … Allerdings bräuchte ich eine gewisse Entschädigung für meine Mühen. Sagen wir einen Silberfaden? Den Weg hinauf, könnt ihr euch immer einen beim Holzfäller verdienen, falls ihr keinen besitzt. Was haltet ihr davon?“</p>",
       "links": [
         {
           "label": "#22 Wir haben einen Silberfaden.",
@@ -454,10 +469,6 @@
         {
           "label": "#20 Wir müssen nochmal zurück!",
           "to": 20
-        },
-        {
-          "label": "#23 Wir können schon zaubern und nehmen es mit den Groschums auf.",
-          "to": 23
         }
       ]
     }
@@ -521,7 +532,7 @@
     "ambient": "amb-forest",
     "npcs": ["gnom", "tree-ghost"],
     "story": {
-      "text": "Puh! Einmal tief durchatmen. Abseits des Weges knackt es im Gebüsch und ihr zuckst nervös zusammen. Streifen da etwa noch mehr von diesen Monstern durch den Wald?! Aber das sind wohl nur Vögel oder andere Kleintiere, die im Unterholz Futter suchen.</p><p>Ihr lauft eine Weile lang weiter den schmalen Pfad entlang und bekommt schon fast wieder das Gefühl, durch einen stinknormalen Wald zu laufen, da hört ihr plötzlich ein tiefes Stöhnen vom Wegesrand her. (Link = ./assets/audio/characters/tree-ghost/call2.mp3)</p><p>Nein, ein Groschum war das nicht! Aber auch kein Tier - zumindest keines, das ihr kennen würdest. Es klingt eher wie ein stöhnendes Gewitter. Seltsam. Vorsichtig schleicht ihr euch weiter den schmalen Weg entlang und kommt dem seltsamen Stöhnen dabei immer näher. Wollt ihr vielleicht vorsichtshalber noch einmal euren Wirrwarrzauber wirken?</p><p><em>Hier gerne noch einmal einen Wirrwarrzauber wirken - ohne das es Folgen hätte.</em></p><p>Schließlich bleibt ihr stehen und schaut euch in alle Richtungen um. Das Geräusch scheint direkt neben euch zu sein, aber da sind doch nur Bäume?! Wie kann das sein?! Doch, nein! Verwundert reibt ihr euch die Augen. Die eine Eiche dort beginnt sich doch tatsächlich zu bewegen?! Am Anfang seid ihr euch noch nicht ganz sicher, ob es nicht eher nur ein starker Wind ist, der den Baum mit viel Kraft zur Seite neigt, aber zu eurem Bedauern lässt sich das auf den zweiten Blick ausschließen. In der alten Eiche öffnet sich jetzt nämlich ein großes Astloch und beginnt wieder grollend zu stöhnen. (Link = ./assets/audio/characters/tree-ghost/call.mp3)</p><p>„Da ist wieder ein Wellenschrat“, piepst es leise von unten herauf. Tromikon, der Gnom, zwinkert euch aufmunternd zu. „Keine Angst, die sind harmlos. Wellenschrate sind doch nur Wellen, die von Baum zu Baum schwingen. Na los, sagt ihm Hallo!“ Ihr gebt euch einen Ruck und macht ein paar Schritte auf den Baum zu, in dem sich so etwas wie ein Gesicht erkennen lässt. Als ihr eure Hand zum Gruße hebt, scheint der Schrat euch zu bemerken und fängt erneut an laut zu stöhnen (Link = ./assets/audio/characters/tree-ghost/call2.mp3).</p><p>„Oh, bitte könnt ihr mir helfen?“, erschallt es hohl aus dem Baumloch. „Dieser verterzte Klopfspecht verfolgt mich von Baum zu Baum. Egal was ich auch tu‘, er gibt keine Ruh’.“</p><p>Im Geäst des Baumes bemerkt ihr einen bunten Vogel, der jetzt wie zur Begrüßung damit anfängt, einen Rhythmus auf den Baumstamm einzuhacken (Link = ./assets/audio/characters/beat-bird/hello.mp3). „Bitte“, fleht euch der Wellenschrat an, „ihr müsst mir helfen. Ihr müsst nur einen Scheuchzauber wirken, das macht, dass er gleich verschwindet.“</p>",
+      "text": "<p>Puh! Einmal tief durchatmen. Abseits des Weges knackt es im Gebüsch und ihr zuckt nervös zusammen. Streifen da etwa noch mehr von diesen Monstern durch den Wald?! Aber das sind wohl nur Vögel oder andere Kleintiere, die im Unterholz Futter suchen.</p><p>Ihr lauft eine Weile lang weiter den schmalen Pfad entlang und bekommt schon fast wieder das Gefühl, durch einen stinknormalen Wald zu laufen, da hört ihr plötzlich ein tiefes Stöhnen vom Wegesrand her. (Link = ./assets/audio/characters/tree-ghost/call2.mp3)</p><p>Nein, ein Groschum war das nicht! Aber auch kein Tier - zumindest keines, das ihr kennen würdet. Es klingt eher wie ein stöhnendes Gewitter. Seltsam. Vorsichtig schleicht ihr euch weiter den schmalen Weg entlang und kommt dem seltsamen Stöhnen dabei immer näher. Wollt ihr vielleicht vorsichtshalber noch einmal euren Wirrwarrzauber wirken?</p><p><em>Hier gerne noch einmal einen Wirrwarrzauber wirken - ohne dass es Folgen hätte.</em></p><p>Schließlich bleibt ihr stehen und schaut euch in alle Richtungen um. Das Geräusch scheint direkt neben euch zu sein, aber da sind doch nur Bäume?! Wie kann das sein?! Doch, nein! Verwundert reibt ihr euch die Augen. Die eine Eiche dort beginnt sich doch tatsächlich zu bewegen?! Am Anfang seid ihr euch noch nicht ganz sicher, ob es nicht eher nur ein starker Wind ist, der den Baum mit viel Kraft zur Seite neigt, aber zu eurem Bedauern lässt sich das auf den zweiten Blick ausschließen. In der alten Eiche öffnet sich jetzt nämlich ein großes Astloch und beginnt wieder grollend zu stöhnen. (Link = ./assets/audio/characters/tree-ghost/call.mp3)</p><p>„Da ist wieder ein Wellenschrat“, piepst es leise von unten herauf. Tromikon, der Gnom, zwinkert euch aufmunternd zu. „Keine Angst, die sind harmlos. Wellenschrate sind doch nur Wellen, die von Baum zu Baum schwingen. Na los, sagt ihm Hallo!“ Ihr gebt euch einen Ruck und macht ein paar Schritte auf den Baum zu, in dem sich so etwas wie ein Gesicht erkennen lässt. Als ihr eure Hand zum Gruße hebt, scheint der Schrat euch zu bemerken und fängt erneut an laut zu stöhnen (Link = ./assets/audio/characters/tree-ghost/call2.mp3).</p><p>„Oh, bitte könnt ihr mir helfen?“, erschallt es hohl aus dem Baumloch. „Dieser verterzte Klasterklopfer verfolgt mich von Baum zu Baum. Egal was ich auch tu‘, er gibt keine Ruh’.“</p><p>Im Geäst des Baumes bemerkt ihr einen bunten Vogel, der jetzt wie zur Begrüßung damit anfängt, einen Rhythmus auf den Baumstamm einzuhacken (Link = ./assets/audio/characters/beat-bird/hello.mp3). „Bitte“, fleht euch der Wellenschrat an, „ihr müsst mir helfen. Ihr müsst einen Zauber wirken, damit er endlich verschwindet.“</p>",
       "links": [
         {
           "label": "#26 Wollt ihr dem Wellenschrat helfen?",
@@ -536,18 +547,18 @@
   },
   {
     "id": 26,
-    "title": "Locke den Klopfspecht",
-    "ambient": "amb_01_wald-still",
+    "title": "Locke den Klasterklopfer",
+    "ambient": "amb-forest",
     "npcs": ["gnom", "tree-ghost"],
     "story": {
-      "text": "<p>“Hört zu“, stöhnt der Baum, „ich werde euch den Zauber jetzt zeigen</p><p><em>Am besten einen Rhythmus vorklopfen, den man nachklopfen oder auf dem Instrument (mit verschiedenen Tönen?) nachspielen muss. Tipp: Es geht auch der Rhythmus eines Stückes.</p><p>Sobald es gelingt, geht es weiter.</em></p><p>Ein großer Vogel kommt auf euch zugeflogen, landet vor euren Füssen und scheint euch etwas zuzurufen (Link = ./assets/audio/characters/beat-bird/flight.mp3).</p><p>„Uaah!“, brummt der Wellenschrat glücklich von seinem Baum herüber. \"Wenn ihr es wünscht, so bringe ich euch noch einen Schutzzauber gegen Eichhörnchen bei. Damit sie euch nichts anhaben können. Ansonsten habt tausend Dank und sei der Grundton ewig mit euch!\"</p>",
+      "text": "<p>“Hört zu“, brummt der Baum, „Stellt euch etwas von mir weg und ich werde euch den Zauber zeigen, </p><p><em>Am besten einen Rhythmus oder Melodie vorspielen. Tipp: Es geht auch der Rhythmus eines Stückes.</p><p>Sobald es gelingt, geht es weiter.</em></p><p>Ein großer Vogel kommt auf euch zugeflogen, landet vor euren Füssen und scheint euch etwas zuzurufen (Link = ./assets/audio/characters/beat-bird/flight.mp3).</p><p>„Uaah!“, brummt der Wellenschrat glücklich von seinem Baum herüber. \"Wenn ihr es wünscht, so bringe ich euch zum Dank noch einen Schutzzauber gegen Eichhörnchen bei. Damit sie euch nichts anhaben können. Ansonsten habt tausend Dank und sei der Grundton ewig mit euch!\"</p>",
       "links": [
         {
           "label": "#27 Gerne noch einen Schutzzauber gegen Hörnchen.",
           "to": 27
         },
         {
-          "label": "#28 Lass mal, ich hab’ keine Angst vor Hörnchen.",
+          "label": "#28 Lass mal, wir haben keine Angst vor Hörnchen.",
           "to": 28
         }
       ]
@@ -635,7 +646,7 @@
           "to": 17
         },
         {
-          "label": "#31 zurück zur Wegkreuzung",
+          "label": "#31 zurück zur Weggabelung",
           "to": 31
         }
       ]
@@ -650,19 +661,19 @@
       "text": "<p>Ihr steht an der Weggabelung und der Kobold schaut euch fragend an. „Na, was darf es noch sein?“</p>",
       "links": [
         {
-          "label": "#32 Ich möchte eine Zauberformel lernen",
+          "label": "#32 Eine Zauberformel lernen",
           "to": 32
         },
         {
-          "label": "#39 Ich gehe Flussaufwärts",
+          "label": "#39 Flussaufwärts gehen",
           "to": 39
         },
         {
-          "label": "#36 Ich gehe Flussabwärts",
+          "label": "#36 Flussabwärts gehen",
           "to": 36
         },
         {
-          "label": "#30 Ich gehe noch mehr Silberfäden beim Holzfäller verdienen.",
+          "label": "#30 Noch mal zum Holzfäller gehen und Silberfäden verdienen.",
           "to": 30
         }
       ]
@@ -685,8 +696,8 @@
           "to": 33
         },
         {
-          "label": "#22 besserer Wirrwarrzauber",
-          "to": 22
+          "label": "#34 besserer Wirrwarrzauber",
+          "to": 34
         }
       ]
     }
@@ -697,10 +708,10 @@
     "ambient": "amb-river",
     "npcs": ["gnom", "goblin"],
     "story": {
-      "text": "<p>„Seht her!\", ruft der Kobold. \"Hier ist der Samen einer Kletterblume. Man pflanzt ihn einfach in die Erde, an der Stelle wo die Blume wachsen soll und dann wirkt folgender Zauber…“</p><p><em>Erstmal Blumenzauber einüben.</p><p>Nach erfolgreichem Üben, geht es weiter.</em></p><p>„Holla die Waldfee!“, staunt der Kobold (Link = ./assets/audio/characters/goblin/amazed.mp3).</p><p>Vor euch schießt eine mächtig große (und verterzt stabil aussehende) Blume in die Höhe (Link = ./assets/audio/sp-effects/flower-grow.mp3).</p><p>Damit habt ihr quasi eine Leiter immer in der Hosentasche – nicht schlecht! </p><p><em>Samen einer Kletterblume aufschreiben und den Blumenwuchs-Zauber merken/aufschreiben.</em></p>",
+      "text": "<p>„Seht her!\", ruft der Kobold. \"Hier ist der Samen einer Kletterblume. Man pflanzt ihn einfach in die Erde, an der Stelle wo die Blume wachsen soll und dann wirkt folgender Zauber…“</p><p><em>Erstmal Blumenzauber einüben.</em></p><p><em>Nach erfolgreichem Üben, geht es weiter.</em></p><p>„Holla die Waldfee!“, staunt der Kobold (Link = ./assets/audio/characters/goblin/amazed.mp3).</p><p>Vor euch schießt eine mächtig große (und verterzt stabil aussehende) Blume in die Höhe (Link = ./assets/audio/sp-effects/flower-grow.mp3).</p><p>Damit habt ihr quasi eine Leiter immer in der Hosentasche – nicht schlecht! </p><p><em>Samen einer Kletterblume aufschreiben und den Blumenwuchs-Zauber merken/aufschreiben.</em></p>",
       "links": [
         {
-          "label": "#31 Ihr steht noch an der Wegkreuzung",
+          "label": "#31 Ihr steht noch an der Weggabelung",
           "to": 31
         },
         {
@@ -716,15 +727,23 @@
   },
   {
     "id": 34,
-    "title": "Schnell weiter",
+    "title": "Besserer Wirrwarrzauber",
     "ambient": "amb-forest",
     "npcs": ["groschums"],
     "story": {
-      "text": "<p>Schnell huscht ihr weiter. Vor euch taucht der große runde Felsen auf. Ihr wisst schon was das bedeutet.</p>",
+     "text": "<p>„Das wird jetzt ein etwas komplizierterer Zauber“, erklärt der Kobold. „Ihr könnt damit aber auch Mellots und sogar so manchen Menschen verwirren.“</p><p><em>Der alte Wirrwarrzauber wird schneller, verlängert oder man denkt sich etwas ganz Neues aus.</em></p>",
       "links": [
+         {
+          "label": "#31 Ihr steht an der Weggabelung",
+          "to": 31
+        },
         {
-          "label": "#23 Die Groschums",
-          "to": 23
+          "label": "#32 was anderes kaufen",
+          "to": 32
+        },
+        {
+          "label": "#55 Ihr seid Mellots begegnet und rennt dahin zurück.",
+          "to": 55
         }
       ]
     }
@@ -738,7 +757,7 @@
       "text": "<p>„Einen Feuerzauber wollt ihr also erlernen?! Nun gut. Um einen vernünftig Feuerzauber zu wirken, macht am Besten folgendes …“</p><p><em>Feuerzauber einüben.</em></p><p>„Und jetzt konzentriert euch auf einen Gegenstand.“</p><p>Sobald der Zauber gelingt, geht’s weiter. (Link = ./assets/audio/sp-effects/explosion.mp3)</p><p><em>Beschreiben, wie das Feuer wirkt.</em></p><p>Der Kobold scheint zufrieden. (Link = ./assets/audio/characters/goblin/okay.mp3)</p><p>Ihr habt tatsächlich einen Feuerzauber erlernt.</p>",
       "links": [
         {
-          "label": "#31 Ab zur Wegkreuzung",
+          "label": "#31 Ihr steht an der Weggabelung",
           "to": 31
         },
         {
@@ -761,7 +780,7 @@
       "text": "<p>Ihr wandert den Weg Flussabwärts und befindet euch schon bald im dichten Unterholz des Waldes wieder. Nach kurzer Zeit trefft ihr auf eine kleine, schummerige Lichtung. Der Boden ist mit grauem Kies bedeckt und in der Mitte steht ein würfelförmiger etwa zwei Meter breiter und ebenso hoher Stein auf dem ein großer alter Baum wächst. Es sieht tatsächlich so als als würde der Baum auf dem Stein thronen. Die Lichtung ist von den angrenzenden Bäumen wie eine Mauer umzäunt - es sieht fast aus wie ein großer Saal, mit offenem Dach. Gegenüber im Gebüsch seht ihr einige alte Holzkisten in unterschiedlichen Größen herumstehen. In dem großen Baum, in der Mitte der Lichtung erkennt ihr ein Gesicht das zu schlafen scheint.</p><p>So leise, dass ihr es kaum noch verstehen könnt, flüstert euch Tromikon ins Ohr. „In dem alten Baum dort schwingt seine Majestät, der König des Waldes. Nimm euch bloß in Acht! Er benimmt sich oft recht ... königlich.“</p>",
       "links": [
         {
-          "label": "#31 lieber zurück zur Wegkreuzung",
+          "label": "#31 lieber zurück zur Weggabelung",
           "to": 31
         },
         {
@@ -834,7 +853,7 @@
       "links": [
         {
           "label": "#401 Alle Wellen gefischt!",
-          "to": 42
+          "to": 401
         }
       ]
     }
@@ -883,7 +902,7 @@
           "to": 49
         },
         {
-          "label": "#31 Wir wollen zurück zur Wegkreuzung",
+          "label": "#31 Wir wollen zurück zur Weggabelung",
           "to": 31
         }
       ]
@@ -1045,13 +1064,18 @@
     "story": {
       "text": "<p>Die Versuchung ist einfach zu groß! Ihr nehmt euch vor, noch einmal einen Wirrwarrzauber zu wirken und dann vorsichtig an den zwei Mellots vorbei bis zu der Kiste zu schleichen.</p><p><em>Aber Achtung! Es sollte ein besserer Wirrwarrzauber als bei den Groschums gewirkt werden. Mellots sind sehr viel schlauer. Der Kobold hatte ja einen angeboten</em></p><p>Reagiere mit entsprechenden Audios aus dem Mellot-Sounds-Ordner.</p>",
       "links": [
+              {
+          "label": "#34 Wir haben noch keinen guten Wirrwarrzauber gegen Mellots erlernt und rennen nochmal schnell zum Kobold zurück.",
+          "to": 34
+        },
+
         {
           "label": "#51 Wenn der Zauber klappt, wird die Kiste geschnappt und untersucht",
           "to": 51
         },
         {
-          "label": "#53 Wirrwarrzauber misslingt? Dann heißt es flüchten (ohne Kiste).",
-          "to": 53
+          "label": "#56 Wirrwarrzauber misslingt? Dann heißt es flüchten (ohne Kiste).",
+          "to": 56
         }
       ]
     }
@@ -1060,33 +1084,29 @@
     "id": 51,
     "title": "Verschlossen",
     "ambient": "amb-glade",
-    "npcs": ["gnom", "mellots"],
+    "npcs": ["gnom"],
     "story": {
       "text": "<p>Stolz untersucht ihr eure Beute. Die Truhe ist nicht sonderlich groß und hat eine seltsame Gravur an der Stelle, wo eigentlich das Schloss sein müsste. Als ihr sie vorsichtig anhebt, bemerkt ihr eine eisige Kälte. Das Schloss scheint vereist zu sein. Vermutlich ließe es sich aber mit einem Feuerzauber auch wieder enteisen.</p><p>Die Gravur erinnert euch an eine Notenschrift. Vorsichtig streichst ihr über das silberne Schildchen und plötzlich erklingt aus dem Inneren der Truhe das Klicken eines Metrums. Sicherlich muss man dazu diese Zeichen nachspielen.</p><p>Oder ist das die Kiste die der Waldkönig vermisst? Doch zum Öffnen bräuchtet ihr sowieso erstmal einen Feuerzauber, um das Schloss zu enteisen.</p><p><em>Zum Öffnen muss man den Feuerzauber beherrschen und ihn auf einer Muschelharfe korrekt vorspielen.</em></p>",
       "links": [
         {
-          "label": "#52 Mit der offenen Kiste",
+          "label": "#52 Wir schmelzen mit dem Feuerzauber das Eis, entschlüsseln den Schlosszauber und öffnen jetzt die Truhe. Kann ja nicht so schwer sein. <em>Wenn es klappt geht's weiter.</em>",
           "to": 52
         },
         {
-          "label": "#37 Mit der Kiste zurück zum Waldkönig",
+          "label": "#37 Wir bringen Kiste zurück zum Waldkönig",
           "to": 37
         },
         {
-          "label": "#53 Mit der verschlossenen Kiste weiter nach Klaster",
+          "label": "#53 Wir gehen mit der verschlossenen Kiste weiter nach Klaster",
           "to": 53
         },
         {
-          "label": "#31 Erstmal den Feuerzauber lernen",
+          "label": "#31 Wir lernen erstmal den Feuerzauber.",
           "to": 31
         },
         {
-          "label": "#17 Nochmal Silberfäden verdienen",
+          "label": "#17 Wir müssen erst noch Silberfäden verdienen.",
           "to": 17
-        },
-        {
-          "label": "#41 Dem Wellenfischer helfen (falls noch nicht geschehen)",
-          "to": 41
         }
       ]
     }
@@ -1132,6 +1152,40 @@
         {
           "label": "#0 Zum Anfang",
           "to": 0
+        }
+      ]
+    }
+  },
+    {
+    "id": 55,
+    "title": "Endlich die Schatzkiste ergattern",
+    "ambient": "amb-forest",
+    "npcs": ["gnom", "mellots"],
+    "story": {
+      "text": "<p>Zurück bei den Mellots im Wald, schleicht ihr euch langsam näher an die beiden heran. Jetzt gilt es, den neuen Wirrwarrzauber zu wirken.</p><p><em>Neuer Wirrwarrzauber muss gewirkt werden.</em></p>",
+      "links": [
+        {
+          "label": "#51 Wenn der Zauber klappt, wird die Kiste geschnappt und untersucht",
+          "to": 51
+        },
+        {
+          "label": "#56 Wirrwarrzauber misslingt? Dann heißt es flüchten (ohne Kiste).",
+          "to": 56
+        }
+      ]
+    }
+  },
+    {
+    "id": 56,
+    "title": "Flucht vor den Mellots",
+    "ambient": "amb-forest",
+    "npcs": ["gnom", "mellots"],
+    "story": {
+      "text": "<p>Ai ai ai, das hat nicht geklappt. So schnell ihr könnt, lauft ihr davon.</p>",
+      "links": [
+        {
+          "label": "#53 Nur weg hier!",
+          "to": 53
         }
       ]
     }

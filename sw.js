@@ -1,9 +1,9 @@
 // Service Worker to 
 //sw.js – robust update + network-first for app shell
 
-const SW_VERSION = "2025-08-13-04"; // bump on every deploy
-const CACHE_STATIC = `melopoiia-static-${SW_VERSION}`;
-const CACHE_DYNAMIC = `melopoiia-dynamic-${SW_VERSION}`;
+const SW_VERSION  = "2025-08-23-01"; // bump on every deploy
+const CACHE_STATIC =  `melopoiia-static-${SW_VERSION}`;
+const CACHE_DYNAMIC =  `melopoiia-dynamic-${SW_VERSION}`;
 
 const CORE = [
   "./",

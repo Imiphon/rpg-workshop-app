@@ -35,14 +35,43 @@ els.burger.addEventListener("click", () => toggleMenu());
 window.addEventListener("load", async () => {
   // Load chapters with cache-buster
   try {
-    const res = await fetch(`./chapters.json?v=${encodeURIComponent(CHAPTER_VERSION)}`, {
-      cache: "no-cache",
-    });
+    // 1st try: with cache-buster
+    let res = await fetch(
+      `./chapters.json?v=${encodeURIComponent(CHAPTER_VERSION)}`,
+      { cache: "no-store" }
+    );
+    //let res = await fetch(`chapters.json`, { cache: "no-store" });
+
+    if (!res.ok) {
+      const t = await res.text();
+      throw new Error(
+        `chapters.json HTTP ${res.status} ${res.statusText}\n${t.slice(0, 200)}`
+      );
+    }
     STATE.chapters = await res.json();
   } catch (e) {
     console.error("Failed to load chapters.json", e);
     STATE.chapters = [];
   }
+
+// Global Listener for Links with href="#..."
+document.addEventListener("click", (e) => {
+  const link = e.target.closest('a[href^="#"]');
+  if (!link) return;
+
+  const href = link.getAttribute("href");
+  // handle only chapter anchors like "#08", "#17", ...
+  if (!/^#\d+$/.test(href)) return;
+
+  e.preventDefault();
+  const id = parseInt(href.slice(1), 10);
+
+  // optional: Menü schließen, wenn der Klick aus dem Text kommt
+  setMenu(false);
+
+  // navigate to chapter
+  goTo(id, false);
+});
 
   // Build chapter list
   els.chapterList.innerHTML = "";
